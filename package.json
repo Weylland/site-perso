@@ -14,7 +14,9 @@
     "prepare": "husky",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "verify": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm test && pnpm build",
+    "verify:quick": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm test"
   },
   "dependencies": {
     "next": "16.2.4",
