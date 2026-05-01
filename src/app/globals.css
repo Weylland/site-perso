@@ -499,8 +499,60 @@
   }
 }
 
+@utility steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@utility step {
+  padding: 2rem 1.5rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal);
+  position: relative;
+
+  &:hover .step-num {
+    transform: rotate(-8deg) scale(1.08);
+  }
+
+  &:nth-child(2) .step-num {
+    background: var(--color-peach);
+  }
+
+  &:nth-child(3) .step-num {
+    background: var(--color-mint);
+  }
+
+  &:nth-child(4) .step-num {
+    background: var(--color-sky);
+  }
+}
+
+@utility step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--color-sunshine);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-sm);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  transition: transform 200ms ease-out;
+}
+
 @supports (animation-timeline: view()) {
-  .card {
+  .card,
+  .step {
     animation: fade-in-up linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
