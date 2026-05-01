@@ -12,6 +12,16 @@ Site vitrine multi-usage : portfolio dev fullstack freelance + boutique de templ
 
 Repo : `Weylland/site-perso` (public). Maquette de référence visuelle : `../site-perso-maquettes/` (dossier frère, source de vérité pour le rendu).
 
+## Fidélité maquette (RÈGLE ABSOLUE)
+
+Chaque section doit reproduire **exactement** la maquette `../site-perso-maquettes/index.html` + `maquette.css` :
+
+- Lire le HTML et le CSS de la section correspondante **avant** d'écrire quoi que ce soit
+- Reproduire **toutes** les animations : hover, pulse, float, count-up, scroll-driven — aucune n'est optionnelle
+- Reproduire **tous** les espacements : convertir les classes maquette (ex. `mt-2` = `margin-top: 2rem` = Tailwind `mt-8`) et vérifier pixel par pixel
+- Reproduire **tous** les effets visuels : rotations, drop-shadows, filtres, opacités
+- En cas de doute sur un détail (espacement, couleur, animation), lire la maquette plutôt qu'interpréter
+
 ## Mode de travail (PRIORITÉ ABSOLUE)
 
 Le mode de travail actuel est défini dans **basic-memory** (note `site-perso - context`, clé `decisions`). Consulter `/load-session` en début de session pour connaître le mode en vigueur avant de coder quoi que ce soit.

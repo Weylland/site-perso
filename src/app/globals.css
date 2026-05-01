@@ -273,3 +273,333 @@
     transform-origin: left center;
   }
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility marquee-item {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+
+  &::after {
+    content: "✦";
+    color: var(--color-sunshine);
+    font-size: 0.9rem;
+  }
+}
+
+@utility stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-lg);
+  background: var(--color-cream);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@utility stat {
+  padding: 2.25rem 1.5rem;
+  border-right: 2.5px solid var(--color-ink);
+  text-align: center;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  @media (max-width: 900px) {
+    border-right: none;
+    border-bottom: 2.5px solid var(--color-ink);
+
+    &:nth-last-child(-n + 2) {
+      border-bottom: none;
+    }
+
+    &:nth-child(odd) {
+      border-right: 2.5px solid var(--color-ink);
+    }
+  }
+}
+
+@utility stat-num {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@utility stat-unit {
+  font-size: 0.55em;
+  font-weight: 500;
+  vertical-align: top;
+  margin-left: 0.1em;
+}
+
+@utility stat-label {
+  font-size: 0.9rem;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-6deg);
+  }
+}
+
+@utility section-label {
+  display: inline-block;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.85rem;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  white-space: nowrap;
+}
+
+@utility section-dots {
+  background-image: radial-gradient(rgba(10, 10, 10, 0.18) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+  background-color: var(--color-cream);
+}
+
+@utility card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@utility card {
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal);
+  padding: 2rem 1.75rem;
+  transition:
+    transform 180ms ease-out,
+    box-shadow 180ms ease-out;
+  text-decoration: none;
+  display: block;
+  color: var(--color-ink);
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: translate(4px, 4px) rotate(-0.6deg);
+    box-shadow: 0 0 0 var(--color-ink);
+  }
+
+  &:hover .sticker-card {
+    animation: wobble 0.6s ease-in-out;
+  }
+}
+
+@utility card-sunshine {
+  background: var(--color-sunshine);
+}
+@utility card-mint {
+  background: var(--color-mint);
+}
+@utility card-sky {
+  background: var(--color-sky);
+}
+
+@utility card-numbered {
+  position: relative;
+  padding-top: 2rem;
+}
+
+@utility card-number {
+  display: block;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 3.25rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.75rem;
+  opacity: 0.88;
+}
+
+@utility card-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.55rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+}
+
+@utility sticker-card {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+
+@utility link-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-ink);
+  border-bottom: 2.5px solid var(--color-ink);
+  padding-bottom: 2px;
+  transition: padding-right 200ms ease-out;
+
+  &:hover {
+    padding-right: 0.35rem;
+  }
+
+  &::after {
+    content: "→";
+    transition: transform 200ms;
+  }
+
+  &:hover::after {
+    transform: translateX(3px);
+  }
+}
+
+@utility steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@utility step {
+  padding: 2rem 1.5rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal);
+  position: relative;
+
+  &:hover .step-num {
+    transform: rotate(-8deg) scale(1.08);
+  }
+
+  &:nth-child(2) .step-num {
+    background: var(--color-peach);
+  }
+
+  &:nth-child(3) .step-num {
+    background: var(--color-mint);
+  }
+
+  &:nth-child(4) .step-num {
+    background: var(--color-sky);
+  }
+}
+
+@utility step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--color-sunshine);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-sm);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  transition: transform 200ms ease-out;
+}
+
+@utility split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@utility price-big {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  display: block;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+@utility card-list {
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  list-style-type: disc;
+
+  & li {
+    margin-bottom: 0.35rem;
+  }
+}
+
+@utility tag {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.82rem;
+}
+
+@supports (animation-timeline: view()) {
+  .card,
+  .step,
+  .split > * {
+    animation: fade-in-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+  }
+}
