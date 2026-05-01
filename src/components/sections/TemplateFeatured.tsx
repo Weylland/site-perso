@@ -18,17 +18,17 @@ export function TemplateFeatured() {
 
           <div>
             <span className="section-label">Template Notion</span>
-            <h2 className="mt-4">
+            <h2 className="mt-8">
               <span className="highlight-peach">Freelance</span>
               <br />
               <em>Dev Hub</em>
             </h2>
-            <p className="mt-4 text-[1.15rem] max-w-[48ch] opacity-90">
+            <p className="mt-8 text-[1.15rem] max-w-[48ch]">
               Le système Notion que j&apos;utilise au quotidien pour gérer mon activité de dev
               freelance. Clients, projets, devis, factures, CRM léger, bugs tracker, idées templates
               — tout est relié, tout est prêt à l&apos;emploi.
             </p>
-            <ul className="card-list mt-6">
+            <ul className="card-list mt-8 text-base">
               <li>8 databases interconnectées (clients, projets, tâches, devis, factures…)</li>
               <li>Dashboard de pilotage CA mensuel, pipe commerciale, charge</li>
               <li>Templates de pages (brief client, post-mortem projet, TJM calculator)</li>
@@ -36,13 +36,15 @@ export function TemplateFeatured() {
               <li>Mises à jour à vie incluses</li>
             </ul>
             <div className="flex items-center gap-6 mt-8 mb-6 flex-wrap">
-              <span className="price-big">12&nbsp;€</span>
+              <span className="price-big" style={{ margin: 0 }}>
+                12&nbsp;€
+              </span>
               <span className="tag">Paiement Stripe ou Gumroad</span>
             </div>
             <div className="flex items-center gap-4 flex-wrap">
               <Link
                 href="/templates/freelance-dev-hub"
-                className="group inline-flex items-center gap-2 font-display font-semibold border-[2.5px] border-ink shadow-brutal bg-sunshine text-ink transition-[transform,box-shadow] duration-[220ms] ease-out hover:[transform:translate(4px,4px)] hover:[box-shadow:0_0_0_var(--color-ink)] px-6 py-[0.9rem] text-base"
+                className="group inline-flex items-center gap-2 font-semibold border-[2.5px] border-ink bg-sunshine text-ink animate-[subtle-pulse_2.4s_ease-in-out_infinite] transition-[transform,box-shadow] duration-[220ms] ease-out hover:[transform:translate(4px,4px)] hover:[box-shadow:0_0_0_var(--color-ink)] hover:[animation-play-state:paused] px-6 py-[0.9rem] text-base"
               >
                 Voir le template{" "}
                 <span
@@ -54,7 +56,7 @@ export function TemplateFeatured() {
               </Link>
               <Link
                 href="/templates"
-                className="inline-flex items-center gap-2 font-display font-semibold border-[2.5px] border-ink shadow-brutal bg-cream text-ink transition-[transform,box-shadow] duration-[220ms] ease-out hover:[transform:translate(4px,4px)] hover:[box-shadow:0_0_0_var(--color-ink)] px-6 py-[0.9rem] text-base"
+                className="inline-flex items-center gap-2 font-semibold border-[2.5px] border-ink shadow-brutal bg-cream text-ink transition-[transform,box-shadow] duration-[220ms] ease-out hover:[transform:translate(4px,4px)] hover:[box-shadow:0_0_0_var(--color-ink)] px-6 py-[0.9rem] text-base"
               >
                 Autres templates
               </Link>
