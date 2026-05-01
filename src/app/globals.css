@@ -499,6 +499,76 @@
   }
 }
 
+@utility quote {
+  padding: 3.5rem 2.5rem 2.5rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-lg);
+  position: relative;
+  margin-top: 2rem;
+}
+
+@utility quote-mark {
+  position: absolute;
+  top: -32px;
+  left: 24px;
+  font-family: var(--font-fraunces), serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--color-ink);
+  background: var(--color-sunshine);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-sm);
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+  box-sizing: border-box;
+}
+
+@utility quote-text {
+  font-family: var(--font-fraunces), serif;
+  font-style: italic;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.4;
+  margin-bottom: 1.75rem;
+  margin-top: 0.5rem;
+  text-wrap: balance;
+}
+
+@utility quote-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+
+  & strong {
+    display: block;
+    font-size: 1rem;
+  }
+
+  & span {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+}
+
+@utility quote-avatar {
+  width: 56px;
+  height: 56px;
+  background: var(--color-peach);
+  border: 2.5px solid var(--color-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
 @utility steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -597,7 +667,8 @@
 @supports (animation-timeline: view()) {
   .card,
   .step,
-  .split > * {
+  .split > *,
+  .quote {
     animation: fade-in-up linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
