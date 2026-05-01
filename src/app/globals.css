@@ -550,9 +550,52 @@
   transition: transform 200ms ease-out;
 }
 
+@utility split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@utility price-big {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  display: block;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+@utility card-list {
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  list-style-type: disc;
+
+  & li {
+    margin-bottom: 0.35rem;
+  }
+}
+
+@utility tag {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.82rem;
+}
+
 @supports (animation-timeline: view()) {
   .card,
-  .step {
+  .step,
+  .split > * {
     animation: fade-in-up linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
