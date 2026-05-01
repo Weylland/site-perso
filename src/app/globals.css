@@ -569,6 +569,73 @@
   flex-shrink: 0;
 }
 
+@utility faq {
+  max-width: 780px;
+  margin: 0 auto;
+
+  & details {
+    background: var(--color-cream);
+    border: 2.5px solid var(--color-ink);
+    box-shadow: var(--shadow-brutal-sm);
+    margin-bottom: 1rem;
+    padding: 1.25rem 1.5rem;
+    transition:
+      box-shadow 200ms,
+      transform 200ms;
+  }
+
+  & details[open] {
+    box-shadow: var(--shadow-brutal);
+    transform: translate(-2px, -2px);
+  }
+
+  & summary {
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  & summary::-webkit-details-marker {
+    display: none;
+  }
+
+  & summary::after {
+    content: "+";
+    font-size: 1.8rem;
+    line-height: 1;
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    font-weight: 500;
+    transition: transform 200ms;
+    flex-shrink: 0;
+  }
+
+  & details[open] summary::after {
+    transform: rotate(45deg);
+  }
+
+  & details p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    opacity: 0.9;
+  }
+
+  & details[open] p {
+    animation: fade-in-up 0.3s ease-out;
+  }
+}
+
+@utility note-small {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 0.85rem;
+}
+
 @utility steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
