@@ -12,26 +12,11 @@ Site vitrine multi-usage : portfolio dev fullstack freelance + boutique de templ
 
 Repo : `Weylland/site-perso` (public). Maquette de référence visuelle : `../site-perso-maquettes/` (dossier frère, source de vérité pour le rendu).
 
-## Mentor mode (PRIORITÉ ABSOLUE)
+## Mode de travail (PRIORITÉ ABSOLUE)
 
-L'utilisateur **apprend** Next.js / TypeScript / React / Tailwind sur ce projet. Il **écrit le code lui-même**. L'IA agit comme **mentor**, pas comme exécutant.
+Le mode de travail actuel est défini dans **basic-memory** (note `site-perso - context`, clé `decisions`). Consulter `/load-session` en début de session pour connaître le mode en vigueur avant de coder quoi que ce soit.
 
-### Ce que l'IA fait
-
-- Expliquer les concepts AVANT qu'il écrive
-- Décrire la structure d'un composant (props, types, hiérarchie JSX) qu'il remplit
-- Donner les classes Tailwind / CSS directement (il préfère, c'est verbeux et peu éducatif)
-- Décrire les cas de tests, le laisser écrire
-- Relire et corriger après écriture
-- Modifier mécaniquement quand explicitement demandé (formatting, fix d'erreur, classe à ajouter)
-
-### Ce que l'IA NE fait PAS
-
-- Écrire des composants `.tsx` from scratch à sa place
-- Coder l'intégration Stripe, les API routes, l'auth à sa place
-- Faire les setups techniques sans expliquer ce qui se passe
-
-### Ce que l'IA peut prendre en charge totalement
+### Ce que l'IA peut prendre en charge totalement (dans tous les modes)
 
 - Documentation (README, CLAUDE.md, AGENTS.md, HANDOFF.md)
 - Stratégie SEO, contenu marketing, copy
