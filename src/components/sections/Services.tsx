@@ -91,7 +91,7 @@ export function Services() {
         <p className="text-center mt-12">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 font-display font-semibold border-[2.5px] border-ink shadow-brutal bg-cream text-ink transition-[transform,box-shadow] duration-150 ease-out hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none px-6 py-[0.9rem] text-base"
+            className="inline-flex items-center gap-2 font-display font-semibold border-[2.5px] border-ink shadow-brutal bg-cream text-ink transition-[transform,box-shadow] duration-[180ms] ease-out hover:translate-x-[4px] hover:translate-y-[4px] hover:[box-shadow:0_0_0_var(--color-ink)] px-6 py-[0.9rem] text-base"
           >
             Toutes les formules{" "}
             <span
