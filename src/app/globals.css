@@ -627,11 +627,28 @@
   align-items: center;
 }
 
+@utility split-reverse {
+  direction: rtl;
+
+  & > * {
+    direction: ltr;
+  }
+}
+
 @media (max-width: 900px) {
-  .split {
+  .split,
+  .split-reverse {
     grid-template-columns: 1fr;
     gap: 3rem;
+    direction: ltr;
   }
+}
+
+@utility section-grid {
+  background-image:
+    linear-gradient(to right, rgba(10, 10, 10, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 10, 10, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
 @utility price-big {
