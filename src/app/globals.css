@@ -748,11 +748,165 @@
   font-size: 0.82rem;
 }
 
+@utility card-peach {
+  background: var(--color-peach);
+}
+
+@utility pill-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+@utility pull-quote {
+  padding: 2rem 3rem;
+  border-left: 6px solid var(--color-sunshine);
+  font-family: var(--font-fraunces), serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+@utility stack-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@utility stack-group {
+  padding: 1.75rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal);
+  transition:
+    transform 180ms ease-out,
+    box-shadow 180ms ease-out;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-brutal-lg);
+  }
+
+  & h3 {
+    margin-bottom: 0.6rem;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  & h3::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: var(--color-sunshine);
+    border: 2.5px solid var(--color-ink);
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  &:nth-child(2) h3::before {
+    background: var(--color-peach);
+  }
+
+  &:nth-child(3) h3::before {
+    background: var(--color-mint);
+  }
+
+  &:nth-child(4) h3::before {
+    background: var(--color-sky);
+  }
+}
+
+@utility timeline {
+  position: relative;
+  padding-left: 2.5rem;
+  max-width: 760px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    bottom: 8px;
+    width: 2.5px;
+    background: var(--color-ink);
+  }
+}
+
+@utility timeline-entry {
+  padding: 1.5rem 1.75rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-sm);
+  margin-bottom: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2.5rem;
+    top: 1.75rem;
+    width: 26px;
+    height: 26px;
+    background: var(--color-sunshine);
+    border: 2.5px solid var(--color-ink);
+    border-radius: 50%;
+    transform: translateX(-4px);
+  }
+
+  &:nth-child(2)::before {
+    background: var(--color-peach);
+  }
+
+  &:nth-child(3)::before {
+    background: var(--color-mint);
+  }
+
+  & h3 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@utility timeline-date {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+  display: block;
+  opacity: 0.75;
+}
+
+@utility grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@utility sticker-hobby {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 @supports (animation-timeline: view()) {
   .card,
   .step,
   .split > *,
-  .quote {
+  .quote,
+  .timeline-entry,
+  .stack-group {
     animation: fade-in-up linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
