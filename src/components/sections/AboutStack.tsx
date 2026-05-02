@@ -28,7 +28,7 @@ export function AboutStack() {
       className="bg-cream section-dots border-b-[2.5px] border-ink py-24"
     >
       <div className="max-w-7xl mx-auto px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 bg-cream border-[2.5px] border-ink shadow-brutal max-w-[760px] mx-auto p-8">
           <span className="section-label">Stack technique</span>
           <h2 className="mt-4">
             Ce avec quoi
