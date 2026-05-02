@@ -752,6 +752,11 @@
   background: var(--color-peach);
 }
 
+@utility card-ink {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
 @utility pill-row {
   display: flex;
   gap: 0.5rem;
@@ -902,6 +907,10 @@
   width: 100px;
   height: auto;
   margin-bottom: 1rem;
+}
+
+.marquee-peach .marquee-item::after {
+  color: var(--color-ink);
 }
 
 @supports (animation-timeline: view()) {
