@@ -1,4 +1,10 @@
-export function Process() {
+import type { ReactNode } from "react";
+
+type ProcessProps = {
+  subtitle?: ReactNode;
+};
+
+export function Process({ subtitle = <em>Zéro surprise.</em> }: ProcessProps) {
   return (
     <section aria-label="Processus" className="bg-peach border-b-[2.5px] border-ink py-24">
       <div className="max-w-7xl mx-auto px-8">
@@ -7,7 +13,7 @@ export function Process() {
           <h2>
             Quatre étapes.
             <br />
-            <em>Zéro surprise.</em>
+            {subtitle}
           </h2>
           <p className="mt-5 max-w-[58ch] mx-auto text-[1.1rem] opacity-80">
             Un cadre simple, éprouvé sur une trentaine de projets. Tu sais où on en est à chaque

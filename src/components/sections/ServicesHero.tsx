@@ -34,7 +34,7 @@ export function ServicesHero() {
               Voir les tarifs
               <span
                 aria-hidden
-                className="inline-block transition-transform duration-200 ease-out group-hover:translate-y-1"
+                className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:-rotate-12"
               >
                 ↓
               </span>

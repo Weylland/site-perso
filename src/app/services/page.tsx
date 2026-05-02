@@ -19,7 +19,13 @@ export default function ServicesPage() {
       <ServicesHero />
       <ServicesMarquee />
       <ServicesFormules />
-      <Process />
+      <Process
+        subtitle={
+          <>
+            <em>Un cadre</em> clair.
+          </>
+        }
+      />
       <Testimonial />
       <ServicesFaq />
       <CtaServices />
