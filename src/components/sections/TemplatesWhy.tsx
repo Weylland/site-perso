@@ -16,7 +16,7 @@ export function TemplatesWhy() {
       className="section-dots border-b-[2.5px] border-ink"
     >
       <div className="max-w-7xl mx-auto px-8 py-24">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 bg-cream border-[2.5px] border-ink shadow-brutal max-w-[760px] mx-auto p-8">
           <span className="section-label">Pourquoi acheter ici</span>
           <h2 className="mt-4">
             Pas un template

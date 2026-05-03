@@ -11,7 +11,7 @@ export function TemplateDetailMarquee() {
   return (
     <section
       aria-label="Arguments produit"
-      className="bg-sunshine border-b-[2.5px] border-ink overflow-hidden py-4"
+      className="marquee-sunshine bg-sunshine border-b-[2.5px] border-ink overflow-hidden py-4"
     >
       <div className="flex gap-12 w-max marquee animate-[marquee_35s_linear_infinite]">
         {[...items, ...items].map((item, i) => (
