@@ -1,0 +1,24 @@
+<svg viewBox="0 0 110 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body -->
+  <ellipse cx="55" cy="55" rx="26" ry="32" fill="#7FD9B8" stroke="#0A0A0A" stroke-width="3" />
+  <!-- Stripe down middle -->
+  <line x1="55" y1="25" x2="55" y2="85" stroke="#0A0A0A" stroke-width="3" />
+  <!-- Head -->
+  <circle cx="55" cy="25" r="10" fill="#7FD9B8" stroke="#0A0A0A" stroke-width="3" />
+  <!-- Antennae -->
+  <path d="M 48 18 Q 42 8 36 6" fill="none" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 62 18 Q 68 8 74 6" fill="none" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="36" cy="6" r="2.5" fill="#0A0A0A" />
+  <circle cx="74" cy="6" r="2.5" fill="#0A0A0A" />
+  <!-- Legs left -->
+  <line x1="32" y1="48" x2="18" y2="40" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" />
+  <line x1="30" y1="60" x2="14" y2="60" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" />
+  <line x1="32" y1="72" x2="18" y2="82" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" />
+  <!-- Legs right -->
+  <line x1="78" y1="48" x2="92" y2="40" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" />
+  <line x1="80" y1="60" x2="96" y2="60" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" />
+  <line x1="78" y1="72" x2="92" y2="82" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" />
+  <!-- Eyes -->
+  <circle cx="50" cy="24" r="1.5" fill="#0A0A0A" />
+  <circle cx="60" cy="24" r="1.5" fill="#0A0A0A" />
+</svg>

@@ -136,6 +136,16 @@
   }
 }
 
+@keyframes float-rotate {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(-3deg);
+  }
+}
+
 @keyframes spin-slow {
   from {
     transform: rotate(0deg);
@@ -911,6 +921,129 @@
 
 .marquee-peach .marquee-item::after {
   color: var(--color-ink);
+}
+
+@utility form-contact {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-lg);
+}
+
+@utility form-field {
+  margin-bottom: 1.5rem;
+
+  & label {
+    display: block;
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  & input,
+  & select,
+  & textarea {
+    width: 100%;
+    padding: 0.85rem;
+    border: 2.5px solid var(--color-ink);
+    background: var(--color-cream);
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 1rem;
+    transition:
+      box-shadow 150ms,
+      transform 150ms;
+  }
+
+  & input:focus,
+  & select:focus,
+  & textarea:focus {
+    outline: none;
+    box-shadow: var(--shadow-brutal);
+    transform: translate(-2px, -2px);
+    background: #fff;
+  }
+
+  & textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+}
+
+@utility form-checkbox {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+
+  & input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 2.5px solid var(--color-ink);
+    accent-color: var(--color-ink);
+    margin-top: 2px;
+    cursor: pointer;
+  }
+
+  & label {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    cursor: pointer;
+
+    & a {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}
+
+@utility newsletter-form {
+  background: var(--color-cream);
+  border: 2.5px solid var(--color-ink);
+  box-shadow: var(--shadow-brutal-lg);
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@utility newsletter-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  & input[type="email"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.7rem 0.9rem;
+    border: 2.5px solid var(--color-ink);
+    background: var(--color-cream);
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      box-shadow: var(--shadow-brutal);
+      transform: translate(-2px, -2px);
+      background: #fff;
+    }
+  }
+}
+
+@utility newsletter-bonus {
+  margin: 0.85rem 0 0;
+  font-size: 0.88rem;
+  background: var(--color-sunshine);
+  border: 2px solid var(--color-ink);
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+}
+
+@utility newsletter-success {
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-mint);
+  border: 2.5px solid var(--color-ink);
 }
 
 @supports (animation-timeline: view()) {
