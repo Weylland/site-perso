@@ -34,11 +34,11 @@ function StarRow({ rating, max = 5 }: { rating: number; max?: number }) {
 }
 
 const cardColorMap: Record<Template["cardColor"], string> = {
-  sunshine: "bg-sunshine",
-  cream: "bg-cream",
-  sky: "bg-sky",
-  peach: "bg-peach",
-  mint: "bg-mint",
+  sunshine: "card-sunshine",
+  cream: "",
+  sky: "card-sky",
+  peach: "card-peach",
+  mint: "card-mint",
 };
 
 function ShopCard({ t }: { t: Template }) {

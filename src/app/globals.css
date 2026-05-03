@@ -923,6 +923,10 @@
   color: var(--color-ink);
 }
 
+.marquee-sunshine .marquee-item::after {
+  color: var(--color-ink);
+}
+
 @utility form-contact {
   max-width: 680px;
   margin: 0 auto;
