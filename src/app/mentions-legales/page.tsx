@@ -128,7 +128,7 @@ export default function MentionsLegalesPage() {
 
       <section aria-label="Autres pages légales" className="bg-peach border-b-[2.5px] border-ink">
         <div className="max-w-[760px] mx-auto px-8 py-24">
-          <div className="mb-12">
+          <div className="mb-16 text-center">
             <span className="section-label">Autres pages légales</span>
             <h2 className="mt-4">Par ici.</h2>
           </div>
