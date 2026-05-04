@@ -1178,6 +1178,43 @@
   margin-top: auto;
 }
 
+.shop-card h3 {
+  transition: text-decoration-color 0.15s ease;
+  text-decoration: underline solid transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.shop-card:hover h3 {
+  text-decoration-color: var(--color-ink);
+}
+.shop-card::after {
+  content: "→";
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-size: 1.1rem;
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--color-ink);
+  background: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+  pointer-events: none;
+}
+.shop-card:hover::after {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+.shop-card-soon::after {
+  display: none;
+}
+
 @utility shop-pager {
   display: flex;
   justify-content: space-between;
