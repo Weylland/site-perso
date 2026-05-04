@@ -110,13 +110,24 @@ function ShopCard({ t }: { t: Template }) {
               {t.price === 0 ? "0 €" : `${t.price} €`}
             </span>
             {isFree ? (
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-sunshine border-[2.5px] border-ink shadow-brutal-sm font-sans font-semibold text-sm transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer">
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-sunshine border-[2.5px] border-ink shadow-brutal-sm font-sans font-semibold text-sm whitespace-nowrap transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer"
+                onClick={(e) => e.stopPropagation()}
+              >
                 Récupérer ✉
-              </span>
+              </button>
             ) : (
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-sunshine border-[2.5px] border-ink shadow-brutal-sm font-sans font-semibold text-sm transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer">
-                Voir le produit
-              </span>
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-sunshine border-[2.5px] border-ink shadow-brutal-sm font-sans font-semibold text-sm whitespace-nowrap transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                }}
+              >
+                Ajouter au panier
+              </button>
             )}
           </>
         )}
@@ -124,9 +135,9 @@ function ShopCard({ t }: { t: Template }) {
     </>
   );
 
-  const classes = `card ${cardColorMap[t.cardColor]} flex flex-col relative ${
+  const classes = `card shop-card ${cardColorMap[t.cardColor]} flex flex-col relative ${
     isSoon
-      ? "border-dashed! opacity-85 hover:![transform:none] hover:![box-shadow:var(--shadow-brutal)]"
+      ? "shop-card-soon border-dashed! opacity-85 hover:![transform:none] hover:![box-shadow:var(--shadow-brutal)]"
       : ""
   }`;
 
