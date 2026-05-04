@@ -138,7 +138,7 @@ export default function MentionsLegalesPage() {
               <p className="text-[0.92rem] leading-relaxed grow">
                 Règles encadrant les prestations de services et la vente de templates numériques.
               </p>
-              <span className="link-cta">Lire les CGV</span>
+              <span className="link-cta w-full">Lire les CGV</span>
             </Link>
             <Link href="/confidentialite" className="card flex flex-col gap-3">
               <h3>Politique de confidentialité</h3>
@@ -146,7 +146,7 @@ export default function MentionsLegalesPage() {
                 Données collectées, durée de conservation, droits RGPD. Pas de newsletter, pas de
                 tracking.
               </p>
-              <span className="link-cta">Lire la politique</span>
+              <span className="link-cta w-full">Lire la politique</span>
             </Link>
           </div>
         </div>
