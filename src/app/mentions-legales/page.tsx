@@ -136,7 +136,7 @@ export default function MentionsLegalesPage() {
             <Link href="/cgv" className="card flex flex-col gap-3">
               <h3>Conditions générales de vente</h3>
               <p className="text-[0.92rem] leading-relaxed grow">
-                Règles encadrant les prestations de services et la vente de templates numériques.
+                Règles encadrant les prestations de services de développement.
               </p>
               <span className="link-cta self-start">Lire les CGV</span>
             </Link>

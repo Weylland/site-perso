@@ -24,9 +24,6 @@ export default function Header() {
           <Link href="/a-propos" className="nav-link hidden min-[820px]:inline">
             À propos
           </Link>
-          <Link href="/templates" className="nav-link hidden min-[820px]:inline">
-            Templates
-          </Link>
           <Link href="/contact" className="nav-link hidden min-[820px]:inline">
             Contact
           </Link>

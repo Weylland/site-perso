@@ -39,10 +39,10 @@ export function MerciHero() {
               </span>
             </Link>
             <Link
-              href="#"
+              href="/a-propos"
               className="inline-flex items-center gap-2 px-6 py-[0.9rem] bg-cream border-[2.5px] border-ink shadow-brutal font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
             >
-              Voir les templates
+              Voir mon parcours
             </Link>
           </div>
         </div>

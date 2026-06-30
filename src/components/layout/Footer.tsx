@@ -74,11 +74,6 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/templates" className={linkClasses}>
-                Templates
-              </Link>
-            </li>
-            <li>
               <Link href="/contact" className={linkClasses}>
                 Contact
               </Link>

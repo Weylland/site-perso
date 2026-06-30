@@ -17,11 +17,11 @@ describe("Hero", () => {
     );
   });
 
-  it("renders the secondary CTA pointing to templates", () => {
+  it("renders the secondary CTA pointing to the about page", () => {
     render(<Hero />);
-    expect(screen.getByRole("link", { name: "Voir les templates" })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Voir mon parcours" })).toHaveAttribute(
       "href",
-      "/templates",
+      "/a-propos",
     );
   });
 

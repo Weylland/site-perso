@@ -12,7 +12,6 @@ describe("Footer", () => {
     const links = [
       { name: "Services", href: "/services" },
       { name: "À propos", href: "/a-propos" },
-      { name: "Templates", href: "/templates" },
       { name: "Contact", href: "/contact" },
       { name: "Mentions légales", href: "/mentions-legales" },
       { name: "CGV", href: "/cgv" },

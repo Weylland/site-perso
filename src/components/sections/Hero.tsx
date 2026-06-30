@@ -42,10 +42,10 @@ export function Hero() {
             </Link>
 
             <Link
-              href="/templates"
+              href="/a-propos"
               className="inline-flex items-center gap-2 px-6 py-[0.9rem] bg-cream border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-cream-2 cursor-pointer"
             >
-              Voir les templates
+              Voir mon parcours
             </Link>
           </div>
 

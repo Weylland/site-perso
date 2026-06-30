@@ -120,11 +120,10 @@ export default function ConfidentialitePage() {
             personne concernée (RGPD art. 6.1.b).
           </p>
           <p className="mt-4 leading-relaxed">
-            <strong>Achat d&apos;un template</strong> — nom, adresse courriel, informations de
-            paiement (traitées directement par Stripe ou Gumroad,{" "}
-            <strong>jamais stockées sur le site</strong>). <em>Finalité :</em> traiter la commande,
-            livrer le produit, respecter les obligations comptables. <em>Base légale :</em>{" "}
-            exécution du contrat (RGPD art. 6.1.b) et obligations légales (RGPD art. 6.1.c).
+            <strong>Facturation d&apos;une prestation</strong> — nom, coordonnées et informations
+            nécessaires à l&apos;établissement des devis et factures. <em>Finalité :</em> exécuter
+            la prestation et respecter les obligations comptables. <em>Base légale :</em> exécution
+            du contrat (RGPD art. 6.1.b) et obligations légales (RGPD art. 6.1.c).
           </p>
           <p className="mt-4 leading-relaxed">
             <strong>Logs techniques</strong> — adresse IP, pages consultées, type de navigateur,
@@ -146,7 +145,7 @@ export default function ConfidentialitePage() {
               <strong>Logs techniques</strong> — 13 mois maximum, puis purge automatique.
             </li>
             <li>
-              <strong>Données d&apos;achat template</strong> — durée légale comptable, avec
+              <strong>Données de facturation</strong> — durée légale comptable, avec
               pseudonymisation au-delà de 3 ans.
             </li>
           </ul>
@@ -271,7 +270,7 @@ export default function ConfidentialitePage() {
             <Link href="/cgv" className="card flex flex-col gap-3">
               <h3>Conditions générales de vente</h3>
               <p className="text-[0.92rem] leading-relaxed grow">
-                Règles encadrant les prestations de services et la vente de templates numériques.
+                Règles encadrant les prestations de services de développement.
               </p>
               <span className="link-cta self-start">Lire les CGV</span>
             </Link>

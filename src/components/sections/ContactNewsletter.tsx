@@ -14,8 +14,8 @@ export function ContactNewsletter() {
               Une lettre <em>par mois</em>, pas plus.
             </h2>
             <p className="mt-4 text-[1.05rem]">
-              Nouveaux templates, mises à jour, retours d&apos;XP de freelance dev. 28 personnes
-              inscrites. Désinscription en un clic.
+              Projets, veille tech et retours d&apos;XP de dev fullstack. 28 personnes inscrites.
+              Désinscription en un clic.
             </p>
           </div>
 

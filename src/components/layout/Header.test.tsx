@@ -13,12 +13,11 @@ describe("Header", () => {
     expect(logo).toHaveAttribute("href", "/");
   });
 
-  it("renders the four navigation links with correct hrefs", () => {
+  it("renders the navigation links with correct hrefs", () => {
     render(<Header />);
     const links = [
       { name: "Services", href: "/services" },
       { name: "À propos", href: "/a-propos" },
-      { name: "Templates", href: "/templates" },
       { name: "Contact", href: "/contact" },
     ];
 

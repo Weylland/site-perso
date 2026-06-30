@@ -9,7 +9,7 @@ import { ContactEngagement } from "@/components/sections/ContactEngagement";
 export const metadata: Metadata = {
   title: "Contact — Nicolas Samier, développeur fullstack freelance",
   description:
-    "Parlons de ton projet. Site, application web, automatisation n8n ou template sur mesure. Réponse sous 48 h ouvrées.",
+    "Parlons de votre projet ou d'un poste. Site, application web, automatisation n8n, mission freelance ou CDI. Réponse sous 48 h ouvrées.",
 };
 
 export default function ContactPage() {
