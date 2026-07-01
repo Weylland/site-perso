@@ -3,6 +3,7 @@ import { Marquee } from "@/components/sections/Marquee";
 import { Stats } from "@/components/sections/Stats";
 import { Services } from "@/components/sections/Services";
 import { Process } from "@/components/sections/Process";
+import { ProjectsFeatured } from "@/components/sections/ProjectsFeatured";
 import { Testimonial } from "@/components/sections/Testimonial";
 import { AboutTeaser } from "@/components/sections/AboutTeaser";
 import { Faq } from "@/components/sections/Faq";
@@ -16,6 +17,7 @@ export default function Home() {
       <Stats />
       <Services />
       <Process />
+      <ProjectsFeatured />
       <Testimonial />
       <AboutTeaser />
       <Faq />

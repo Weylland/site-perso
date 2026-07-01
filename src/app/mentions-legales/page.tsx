@@ -32,7 +32,7 @@ export default function MentionsLegalesPage() {
           <p className="mt-4 leading-relaxed">
             Site édité par <strong>Nicolas Samier</strong>, entrepreneur individuel (EI).
             <br />
-            Adresse du siège : <em>Pas-de-Calais, France</em>.<br />
+            Adresse du siège : <em>Hauts-de-France, France</em>.<br />
             SIRET : 000 000 000 00000.
             <br />
             Numéro de TVA intracommunautaire : FR00 000000000 (franchise en base, TVA non
@@ -55,18 +55,11 @@ export default function MentionsLegalesPage() {
 
           <h2 className="mt-12">Hébergement</h2>
           <p className="mt-4 leading-relaxed">
-            Le site est hébergé par <strong>Vercel Inc.</strong>, 440 N Barranca Ave #4133, Covina,
-            CA 91723, États-Unis. Site web :{" "}
-            <a
-              href="https://vercel.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 hover:opacity-70 transition-opacity"
-            >
-              vercel.com
-            </a>
-            . Les données techniques transitent par les serveurs européens de l&apos;hébergeur
-            lorsque la configuration le permet.
+            Le site est hébergé sur un serveur dédié (VPS).{" "}
+            <strong>
+              [Hébergeur à compléter avant la mise en ligne : raison sociale, adresse complète et
+              téléphone.]
+            </strong>
           </p>
 
           <h2 className="mt-12">Propriété intellectuelle</h2>
@@ -78,8 +71,8 @@ export default function MentionsLegalesPage() {
           </p>
           <p className="mt-4 leading-relaxed">
             Les stickers SVG et illustrations custom sont des créations originales. Les marques
-            citées (Next.js, Node.js, WordPress, n8n, Notion, Stripe, Resend, Vercel, etc.) restent
-            la propriété de leurs détenteurs respectifs.
+            citées (Next.js, Node.js, WordPress, n8n, etc.) restent la propriété de leurs détenteurs
+            respectifs.
           </p>
 
           <h2 className="mt-12">Responsabilité</h2>

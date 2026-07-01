@@ -40,7 +40,7 @@ export default function CgvPage() {
 
           <h2 className="mt-12">2. Prestations de services</h2>
           <p className="mt-4 leading-relaxed">
-            Les prestations (site vitrine, application web, automatisation n8n, TMA) font
+            Les prestations (site vitrine, application web, automatisation n8n, maintenance) font
             l&apos;objet d&apos;un <strong>devis détaillé préalable</strong>. Le devis précise le
             périmètre, les livrables, le planning, les conditions de paiement et la durée de
             validité. Toute commande implique l&apos;acceptation sans réserve du devis.
@@ -48,7 +48,7 @@ export default function CgvPage() {
           <p className="mt-4 leading-relaxed">
             Un <strong>acompte de 30 %</strong> est demandé à la signature. Le solde est réglé à la
             livraison, ou selon l&apos;échéancier prévu au devis pour les projets longs (missions
-            récurrentes, TMA mensualisée).
+            récurrentes, maintenance mensualisée).
           </p>
           <p className="mt-4 leading-relaxed">
             Les délais de paiement sont de <strong>30 jours</strong> à compter de l&apos;émission de

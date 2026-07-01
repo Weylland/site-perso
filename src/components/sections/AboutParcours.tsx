@@ -1,18 +1,23 @@
 const entries = [
   {
-    date: "2025 — aujourd'hui",
-    title: "Freelance fullstack",
-    body: "Sites, applications web et automatisations pour startups, petites boîtes et autres freelances. Une trentaine de projets livrés à date, dont la refonte complète du site de l'association CGR et plusieurs MVPs SaaS en TypeScript.",
+    date: "2026 — aujourd'hui",
+    title: "Freelance fullstack & IA",
+    body: "Sites, applications web, automatisations et intégrations IA, sur place ou à distance. Conception et développement de bout en bout — du cadrage à la mise en ligne. C'est aussi la période où je construis mes projets perso : watch·ia et RivalRush.",
   },
   {
-    date: "2024 — 2025",
-    title: "4Spel · Fondateur & dev lead",
-    body: "Entreprise propre (auto-entreprise puis SASU). Sites sur mesure en PHP natif et JavaScript vanilla pour clients BtoB locaux, intégration WordPress sur thèmes custom, première exploration sérieuse de n8n pour automatiser les process clients.",
+    date: "2024 — 2026",
+    title: "4Spel · Co-fondateur & développeur web",
+    body: "Création de l'entreprise en tant qu'associé. Développement de l'application avec Node.js, Next.js et AWS. Projet actuellement en pause.",
   },
   {
-    date: "2021 — 2024",
-    title: "Apresta · Développeur fullstack",
-    body: "Premier vrai poste. Sites WordPress, applications web sur mesure pour divers clients (e-commerce, édition, associatif). Montée en compétence progressive sur React, Node.js et les bonnes pratiques DevOps.",
+    date: "2022 — 2024",
+    title: "Apresta · Développeur web",
+    body: "Débuté en stage puis intégré à l'équipe. Sites et applications en PHP, JavaScript et WordPress / WooCommerce. Intégration AWS : API Gateway, Lambda, DynamoDB, S3.",
+  },
+  {
+    date: "2018",
+    title: "ADAV · Stage développeur web (Lille)",
+    body: "Carte interactive pour cyclistes en JavaScript avec la librairie Leaflet.",
   },
 ];
 
@@ -23,9 +28,8 @@ export function AboutParcours() {
         <div className="text-center mb-16">
           <span className="section-label">Parcours</span>
           <h2 className="mt-4">
-            Trois ans
-            <br />
-            <em>dans les mains</em>.
+            D&apos;un stage
+            <br />à <em>aujourd&apos;hui</em>.
           </h2>
         </div>
 

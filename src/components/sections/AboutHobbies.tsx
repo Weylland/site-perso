@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const hobbies = [
   {
-    src: "/stickers/guitar.svg",
+    src: "/stickers/guitar.png",
     label: "Guitare",
     color: "card-sunshine",
-    body: "Acoustique et électrique depuis 15 ans. Plutôt prog, math rock, fingerstyle. Les bons jours, j'arrive même à enregistrer un riff propre.",
+    body: "Surtout de l'acoustique. Un bon moyen de décrocher de l'écran et de faire autre chose de mes mains.",
   },
   {
     src: "/stickers/headphones.svg",
     label: "Musique",
     color: "card-peach",
-    body: "Spotify à 40 000 minutes/an. Prog rock 70s, hip-hop français contemporain, OSTs de jeux. Je code toujours avec un casque.",
+    body: "Toujours un casque sur les oreilles quand je code. Un peu de tout, selon l'humeur du moment.",
   },
   {
     src: "/stickers/gamepad.svg",
     label: "Jeux vidéo",
     color: "card-sky",
-    body: "RPGs monstrueux, metroidvanias, roguelikes. Pile de jeux pas finis : 43 et en croissance. Pardon.",
+    body: "Des heures sur des jeux que je ne finis jamais — et une pile qui ne cesse de grandir.",
   },
 ];
 

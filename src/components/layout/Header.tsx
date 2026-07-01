@@ -18,11 +18,17 @@ export default function Header() {
         </Link>
 
         <nav className="flex items-center gap-7 flex-wrap">
+          <Link href="/" className="nav-link hidden min-[820px]:inline">
+            Accueil
+          </Link>
           <Link href="/services" className="nav-link hidden min-[820px]:inline">
             Services
           </Link>
           <Link href="/a-propos" className="nav-link hidden min-[820px]:inline">
             À propos
+          </Link>
+          <Link href="/realisations" className="nav-link hidden min-[820px]:inline">
+            Réalisations
           </Link>
           <Link href="/contact" className="nav-link hidden min-[820px]:inline">
             Contact

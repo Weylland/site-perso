@@ -38,7 +38,7 @@ export function ContactHero() {
             </div>
             <div className="flex items-center gap-2">
               <strong aria-hidden>📍</strong>
-              <span className="opacity-70">Pas-de-Calais · remote France</span>
+              <span className="opacity-70">Hauts-de-France · sur place ou à distance</span>
             </div>
             <div className="flex items-center gap-2">
               <strong aria-hidden>⏱️</strong>

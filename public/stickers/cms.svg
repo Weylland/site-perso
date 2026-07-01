@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <path d="M30 30 L 120 30 L 150 60 L 170 60 L 170 150 L 80 150 L 50 120 L 30 120 Z" fill="#7FD9B8" stroke="#0A0A0A" stroke-width="5" stroke-linejoin="round"></path>
-  <circle cx="64" cy="74" r="6" fill="#0A0A0A"></circle>
-  <path d="M56 94 Q 64 100 72 94" stroke="#0A0A0A" stroke-width="3" fill="none" stroke-linecap="round"></path>
-  <rect x="104" y="84" width="50" height="8" fill="#FFD93D" stroke="#0A0A0A" stroke-width="2.5"></rect>
-  <rect x="104" y="102" width="40" height="8" fill="#FEFAF3" stroke="#0A0A0A" stroke-width="2.5"></rect>
+  <path d="M30 30 L120 30 L150 60 L170 60 L170 150 L80 150 L50 120 L30 120 Z" fill="#7FD9B8" stroke="#0A0A0A" stroke-width="6" stroke-linejoin="miter"/>
+  <circle cx="64" cy="74" r="6" fill="#0A0A0A"/>
+  <path d="M56 94 Q64 100 72 94" stroke="#0A0A0A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <rect x="104" y="78" width="50" height="9" fill="#FFD93D" stroke="#0A0A0A" stroke-width="3"/>
+  <rect x="104" y="96" width="50" height="9" fill="#FEFAF3" stroke="#0A0A0A" stroke-width="3"/>
+  <rect x="104" y="114" width="50" height="9" fill="#FFB892" stroke="#0A0A0A" stroke-width="3"/>
 </svg>

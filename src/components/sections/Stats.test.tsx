@@ -9,17 +9,17 @@ it("renders the stats region", () => {
 
 it("displays all stat labels", () => {
   render(<Stats />);
-  expect(screen.getByText("Projets livrés")).toBeInTheDocument();
-  expect(screen.getByText("Clients actifs")).toBeInTheDocument();
-  expect(screen.getByText("Expérience fullstack")).toBeInTheDocument();
-  expect(screen.getByText("Remote France")).toBeInTheDocument();
+  expect(screen.getByText("Développeur depuis")).toBeInTheDocument();
+  expect(screen.getByText("Technos maîtrisées")).toBeInTheDocument();
+  expect(screen.getByText("Projets en ligne")).toBeInTheDocument();
+  expect(screen.getByText("Réponse sous")).toBeInTheDocument();
 });
 
 it("displays all stat numbers after count-up", async () => {
   render(<Stats />);
   const statNums = document.querySelectorAll(".stat-num");
-  await waitFor(() => expect(statNums[0]).toHaveTextContent("37"));
-  expect(statNums[1]).toHaveTextContent("12");
-  expect(statNums[2]).toHaveTextContent("3");
-  expect(statNums[3]).toHaveTextContent("100");
+  await waitFor(() => expect(statNums[0]).toHaveTextContent("2018"));
+  expect(statNums[1]).toHaveTextContent("15");
+  expect(statNums[2]).toHaveTextContent("4");
+  expect(statNums[3]).toHaveTextContent("48");
 });

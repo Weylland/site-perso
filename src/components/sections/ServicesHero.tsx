@@ -22,8 +22,8 @@ export function ServicesHero() {
           </h1>
 
           <p className="text-[1.2rem] max-w-[50ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
-            Cinq formules, des tarifs publics, un process carré. Devis précis sous 48&nbsp;h après
-            un échange pour cadrer ton besoin.
+            Six formules claires, un process carré. Devis précis sous 48&nbsp;h après un échange
+            pour cadrer ton besoin.
           </p>
 
           <div className="flex gap-4 flex-wrap animate-[fade-in-up_0.8s_ease-out_0.42s_backwards]">
@@ -31,7 +31,7 @@ export function ServicesHero() {
               href="#formules"
               className="group inline-flex items-center gap-2 px-6 py-[0.9rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer animate-[subtle-pulse_2.8s_ease-in-out_infinite] hover:animate-none"
             >
-              Voir les tarifs
+              Voir les formules
               <span
                 aria-hidden
                 className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:-rotate-12"

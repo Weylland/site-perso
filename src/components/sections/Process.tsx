@@ -16,8 +16,8 @@ export function Process({ subtitle = <em>Zéro surprise.</em> }: ProcessProps) {
             {subtitle}
           </h2>
           <p className="mt-5 max-w-[58ch] mx-auto text-[1.1rem] opacity-80">
-            Un cadre simple, éprouvé sur une trentaine de projets. Tu sais où on en est à chaque
-            instant. Tu valides à chaque étape clé.
+            Un cadre simple, éprouvé projet après projet. Tu sais où on en est à chaque instant. Tu
+            valides à chaque étape clé.
           </p>
         </div>
 

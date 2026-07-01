@@ -24,17 +24,17 @@ export function AboutTeaser() {
             <h2 className="mt-8">
               Dev indé,
               <br />
-              <em>3 ans</em> dans les mains.
+              <em>du front au cloud</em>.
             </h2>
             <p className="mt-8" style={{ fontSize: "1.1rem" }}>
-              J&apos;ai démarré chez Apresta sur des sites WordPress et des apps web sur mesure.
-              Puis j&apos;ai monté 4Spel, ma boîte, pour prendre la main sur des projets plus
-              complets — PHP natif, intégrations WP, apps métier.
+              J&apos;ai démarré chez Apresta sur des sites WordPress / WooCommerce et des apps web
+              (PHP, JavaScript), avec de l&apos;intégration AWS. Puis j&apos;ai co-fondé 4Spel pour
+              développer une application complète en Node.js, Next.js et AWS.
             </p>
             <p className="mt-[1em]">
-              Aujourd&apos;hui je bosse en freelance depuis le Pas-de-Calais, en remote partout en
-              France. Disponible aussi pour des missions longues ou un CDI si l&apos;équipe et le
-              projet collent.
+              Aujourd&apos;hui je bosse en freelance depuis les Hauts-de-France, sur place ou à
+              distance partout en France. Disponible aussi pour des missions longues ou un CDI si
+              l&apos;équipe et le projet collent.
             </p>
             <p className="mt-[1em]">
               Quand je ne code pas, je joue de la guitare, j&apos;écoute trop de musique, et

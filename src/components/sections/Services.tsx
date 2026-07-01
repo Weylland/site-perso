@@ -13,7 +13,7 @@ export function Services() {
             <em>une exécution</em> propre.
           </h2>
           <p className="mt-5 max-w-[58ch] mx-auto text-[1.1rem] opacity-80">
-            Sites vitrine, applications web sur mesure, automatisations n8n. Chaque projet suit le
+            Sites vitrine, applications web sur mesure, automatisation et IA. Chaque projet suit le
             même cadre&nbsp;: brief carré, chiffrage clair, livraison propre.
           </p>
         </div>
@@ -21,7 +21,6 @@ export function Services() {
         <div className="card-grid">
           <Link href="/services#site-vitrine" className="card card-numbered card-sunshine">
             <span className="card-number">01</span>
-            <span className="card-tag">Dès 1&nbsp;200&nbsp;€</span>
             <Image
               src="/stickers/globe.svg"
               alt=""
@@ -35,15 +34,14 @@ export function Services() {
               <br />& landing pages
             </h3>
             <p>
-              3 à 5 pages responsive, hébergement configuré, SEO technique propre, formulaire de
-              contact anti-spam. Next.js ou WordPress selon le contexte éditorial.
+              3 à 5 pages adaptées à tous les écrans, hébergement configuré, bien référencé sur
+              Google, formulaire de contact anti-spam. La technologie est choisie selon ton besoin.
             </p>
             <span className="link-cta mt-6">Voir les formules</span>
           </Link>
 
           <Link href="/services#application-web" className="card card-numbered card-mint">
             <span className="card-number">02</span>
-            <span className="card-tag">Dès 4&nbsp;500&nbsp;€</span>
             <Image
               src="/stickers/bolt.svg"
               alt=""
@@ -59,14 +57,13 @@ export function Services() {
             </h3>
             <p>
               MVP, outils internes, SaaS simples. Cycle complet&nbsp;: cadrage, design UX, dev
-              fullstack TypeScript, déploiement Vercel ou AWS. Délai 4 à 8 semaines.
+              fullstack TypeScript, déploiement et mise en ligne.
             </p>
             <span className="link-cta mt-6">Voir les formules</span>
           </Link>
 
           <Link href="/services#automatisation-n8n" className="card card-numbered card-sky">
             <span className="card-number">03</span>
-            <span className="card-tag">Dès 400&nbsp;€</span>
             <Image
               src="/stickers/gears.svg"
               alt=""
@@ -76,13 +73,13 @@ export function Services() {
               aria-hidden="true"
             />
             <h3>
-              Automatisations
-              <br />
-              n8n sur-mesure
+              Automatisation
+              <br />& IA sur mesure
             </h3>
             <p>
-              Connecter Stripe, Notion, Gmail, HubSpot, Airtable. Workflows de facturation,
-              onboarding client, notifications équipe. Doc complète livrée.
+              Automatiser tes tâches répétitives (facturation, relances, notifications) et brancher
+              de l&apos;IA utile&nbsp;: un assistant connecté à tes documents, de la rédaction
+              automatique. Mode d&apos;emploi fourni.
             </p>
             <span className="link-cta mt-6">Voir les formules</span>
           </Link>

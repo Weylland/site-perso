@@ -22,9 +22,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Nicolas Samier — Développeur fullstack freelance",
+  title: "Nicolas Samier — Développeur fullstack (CDI & freelance)",
   description:
-    "Développeur fullstack freelance basé dans le Nord, remote France. Sites, applications web, automatisations n8n pour startups, freelances et petites équipes.",
+    "Développeur web fullstack, Hauts-de-France — sur place ou à distance. Sites et applications web (Next.js, Node), infrastructure AWS, automatisation et IA. Disponible en CDI comme en freelance.",
 };
 
 export default function RootLayout({

@@ -168,14 +168,11 @@ export default function ConfidentialitePage() {
           </p>
           <ul className="card-list">
             <li>
-              <strong>Resend</strong> — envoi des courriels transactionnels (confirmations,
-              réponses).
+              <strong>Resend</strong> — envoi des courriels liés à ta demande de contact
+              (confirmation et réponse).
             </li>
             <li>
-              <strong>Stripe</strong> et <strong>Gumroad</strong> — traitement des paiements.
-            </li>
-            <li>
-              <strong>Vercel</strong> — hébergement du site et des API routes.
+              <strong>Hébergeur (VPS)</strong> — hébergement du site et journaux techniques.
             </li>
           </ul>
           <p className="mt-4 leading-relaxed">
@@ -185,11 +182,11 @@ export default function ConfidentialitePage() {
 
           <h2 className="mt-12">Transferts hors UE</h2>
           <p className="mt-4 leading-relaxed">
-            Certains prestataires sont situés aux États-Unis (Resend, Stripe, Vercel, Gumroad). Les
-            transferts sont encadrés par les <strong>clauses contractuelles types</strong> de la
+            Le service d&apos;envoi de courriels <strong>Resend</strong> est situé aux États-Unis.
+            Les transferts sont encadrés par les <strong>clauses contractuelles types</strong> de la
             Commission européenne et par les engagements de conformité au{" "}
-            <strong>Data Privacy Framework</strong> (EU-US DPF) lorsque les prestataires y sont
-            certifiés.
+            <strong>Data Privacy Framework</strong> (EU-US DPF) lorsque le prestataire y est
+            certifié.
           </p>
 
           <h2 className="mt-12">Sécurité</h2>

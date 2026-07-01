@@ -1,23 +1,23 @@
 const items = [
   {
-    q: "Quels délais pour un site vitrine ?",
-    a: "Entre 2 et 4 semaines à partir de la signature du devis et de la réception des contenus. Si tu es pressé, demande un slot express.",
+    q: "Quels délais pour un site ?",
+    a: "Ça dépend du périmètre et du moment où tu me fournis tes contenus. On fixe une date réaliste ensemble dans le devis. Si c'est urgent, dis-le : je peux parfois prévoir un créneau prioritaire.",
   },
   {
-    q: "WordPress ou Next.js ?",
-    a: "Ça dépend de ton besoin. WordPress pour l'éditorial en autonomie et un écosystème de plugins large. Next.js pour la perf extrême, un SEO technique poussé ou des fonctionnalités sur-mesure.",
+    q: "Tu travailles avec quelles technologies ?",
+    a: "Celle qui colle le mieux à ton besoin — je ne t'enferme pas dans un outil. WordPress si tu veux gérer ton contenu toi-même, du développement sur mesure si tu as besoin de rapidité ou de fonctions particulières. On choisit ensemble, selon ton projet et ton budget.",
   },
   {
     q: "Tu reprends un site existant ?",
-    a: "Oui, via la formule TMA. Audit rapide, priorisation, puis on avance par lots. Du code propre comme du legacy embrouillé.",
+    a: "Oui, c'est la formule maintenance & dépannage. On regarde l'existant ensemble, on classe les priorités, puis on avance par petites étapes. Que ce soit propre ou un peu bricolé, je m'adapte.",
   },
   {
     q: "Comment se passe le paiement ?",
-    a: "30 % à la signature, 70 % à la livraison. Virement SEPA ou carte Stripe. Auto-entrepreneur, TVA non applicable (art. 293 B du CGI).",
+    a: "30 % à la commande, le reste à la livraison. Virement ou carte. En auto-entrepreneur, la TVA n'est pas applicable.",
   },
   {
     q: "Missions longues ou CDI ?",
-    a: "Oui, ouvert aux missions longues en TJM (350–500 €/j selon contexte) et au CDI si l'équipe et le projet sont intéressants.",
+    a: "Oui, je suis ouvert aux missions longues comme à un poste en CDI, si l'équipe et le projet me parlent.",
   },
 ];
 

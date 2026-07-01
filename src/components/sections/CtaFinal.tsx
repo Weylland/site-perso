@@ -23,7 +23,7 @@ export function CtaFinal() {
           }}
         >
           Pas besoin d&apos;avoir un cahier des charges blindé. Un mail, un appel, et on défriche
-          ensemble. Retour sous 24 h ouvrées — garanti.
+          ensemble. Retour sous 48 h ouvrées — garanti.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <a
@@ -39,7 +39,9 @@ export function CtaFinal() {
             </span>
           </a>
           <a
-            href="mailto:contact@nicolassamier.fr"
+            href="/cv-nicolas-samier.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-semibold border-[2.5px] text-[1.05rem] px-8 py-[1.15rem] transition-[transform,box-shadow] duration-150 ease-out hover:[transform:translate(4px,4px)] hover:shadow-none"
             style={{
               background: "transparent",
@@ -48,11 +50,11 @@ export function CtaFinal() {
               boxShadow: "4px 4px 0 var(--color-peach)",
             }}
           >
-            Écrire un mail
+            Télécharger mon CV
           </a>
         </div>
         <p className="note-small" style={{ color: "var(--color-cream)", opacity: 0.65 }}>
-          contact@nicolassamier.fr · Réponse sous 24 h ouvrées
+          samiernicolas62@gmail.com · Réponse sous 48 h ouvrées
         </p>
       </div>
     </section>

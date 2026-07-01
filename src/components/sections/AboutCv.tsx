@@ -21,11 +21,13 @@ export function AboutCv() {
           Besoin du CV <em>complet</em>&nbsp;?
         </h2>
         <p style={{ margin: "1rem auto 2rem", maxWidth: "50ch", fontSize: "1.1rem" }}>
-          Format PDF, à jour, prêt pour un recruteur ou un DSI. Inclut références vérifiables,
-          projets détaillés, et grille TJM.
+          Format PDF, à jour, prêt pour un recruteur ou un DSI. Expériences, formations, stack
+          complète et projets en un coup d&apos;œil.
         </p>
         <a
-          href="#"
+          href="/cv-nicolas-samier.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 font-semibold border-[2.5px] border-ink bg-sunshine text-ink shadow-brutal transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none px-8 py-[1.15rem] text-[1.05rem]"
         >
           Télécharger mon CV (PDF)
@@ -36,7 +38,7 @@ export function AboutCv() {
             ↓
           </span>
         </a>
-        <p className="note-small">Mis à jour en avril 2026 · 3 pages · 280 ko</p>
+        <p className="note-small">Mis à jour en juin 2026 · PDF · 1 page</p>
       </div>
     </section>
   );

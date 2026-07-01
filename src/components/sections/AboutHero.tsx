@@ -24,9 +24,9 @@ export function AboutHero() {
           </h1>
 
           <p className="text-[1.2rem] max-w-[50ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
-            Trois ans d&apos;XP, une trentaine de projets livrés, un goût net pour le code propre et
-            les livrables qui font le job sans bruit. Basé dans le Pas-de-Calais, en remote partout
-            en France.
+            Développeur web fullstack. Sites, applications, automatisations et IA, du premier
+            échange à la mise en ligne. Un goût net pour le travail propre et les livrables qui font
+            le job sans bruit. Basé en Hauts-de-France — sur place ou à distance partout en France.
           </p>
 
           <div className="flex gap-4 flex-wrap animate-[fade-in-up_0.8s_ease-out_0.42s_backwards]">
@@ -63,7 +63,7 @@ export function AboutHero() {
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
-            src="/stickers/guitar.svg"
+            src="/stickers/guitar.png"
             alt=""
             width={120}
             height={120}
@@ -86,7 +86,7 @@ export function AboutHero() {
             width={80}
             height={80}
             aria-hidden
-            className="absolute top-[50%] right-[5%] w-[18%] h-auto z-[5] animate-[spin-slow_12s_linear_infinite]"
+            className="absolute top-[8%] right-[4%] w-[16%] h-auto z-[5] animate-[spin-slow_12s_linear_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
         </div>

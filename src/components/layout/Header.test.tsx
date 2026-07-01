@@ -16,8 +16,10 @@ describe("Header", () => {
   it("renders the navigation links with correct hrefs", () => {
     render(<Header />);
     const links = [
+      { name: "Accueil", href: "/" },
       { name: "Services", href: "/services" },
       { name: "À propos", href: "/a-propos" },
+      { name: "Réalisations", href: "/realisations" },
       { name: "Contact", href: "/contact" },
     ];
 

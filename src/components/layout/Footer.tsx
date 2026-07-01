@@ -31,12 +31,12 @@ export default function Footer() {
             </span>
           </Link>
           <p className="mt-5 text-[0.95rem] opacity-80 max-w-[32ch]">
-            Développeur fullstack freelance, basé dans le Pas-de-Calais, en remote partout en
-            France.
+            Développeur web, basé en Hauts-de-France — sur place ou à distance partout en France.
+            Disponible en CDI comme en freelance.
           </p>
           <div className="mt-5 flex gap-2">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/samier-nicolas/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-[0.85rem] py-[0.4rem] bg-transparent text-cream border-[2.5px] border-cream font-display font-medium text-[0.9rem] transition-transform duration-150 ease-out hover:-translate-x-0.5 hover:-translate-y-0.5 shadow-[2px_2px_0_var(--color-peach)] hover:shadow-[4px_4px_0_var(--color-peach)]"
@@ -44,7 +44,7 @@ export default function Footer() {
               LinkedIn
             </a>
             <a
-              href="#"
+              href="https://github.com/Weylland"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-[0.85rem] py-[0.4rem] bg-transparent text-cream border-[2.5px] border-cream font-display font-medium text-[0.9rem] transition-transform duration-150 ease-out hover:-translate-x-0.5 hover:-translate-y-0.5 shadow-[2px_2px_0_var(--color-sunshine)] hover:shadow-[4px_4px_0_var(--color-sunshine)]"
@@ -52,7 +52,9 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="#"
+              href="/cv-nicolas-samier.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-[0.85rem] py-[0.4rem] bg-transparent text-cream border-[2.5px] border-cream font-display font-medium text-[0.9rem] transition-transform duration-150 ease-out hover:-translate-x-0.5 hover:-translate-y-0.5 shadow-[2px_2px_0_var(--color-mint)] hover:shadow-[4px_4px_0_var(--color-mint)]"
             >
               CV PDF
@@ -64,6 +66,11 @@ export default function Footer() {
           <h4 className="text-cream text-[0.85rem] mb-4">Navigation</h4>
           <ul className="space-y-[0.6rem]">
             <li>
+              <Link href="/" className={linkClasses}>
+                Accueil
+              </Link>
+            </li>
+            <li>
               <Link href="/services" className={linkClasses}>
                 Services
               </Link>
@@ -71,6 +78,11 @@ export default function Footer() {
             <li>
               <Link href="/a-propos" className={linkClasses}>
                 À propos
+              </Link>
+            </li>
+            <li>
+              <Link href="/realisations" className={linkClasses}>
+                Réalisations
               </Link>
             </li>
             <li>
@@ -106,19 +118,19 @@ export default function Footer() {
           <h4 className="text-cream text-[0.85rem] mb-4">Contact</h4>
           <ul className="space-y-[0.6rem]">
             <li>
-              <a href="mailto:contact@nicolassamier.fr" className={linkClasses}>
-                contact@nicolassamier.fr
+              <a href="mailto:samiernicolas62@gmail.com" className={linkClasses}>
+                samiernicolas62@gmail.com
               </a>
             </li>
-            <li className="text-[0.95rem] opacity-70">Pas-de-Calais · France</li>
-            <li className="text-[0.95rem] opacity-70">Remote 100 %</li>
+            <li className="text-[0.95rem] opacity-70">Hauts-de-France · France</li>
+            <li className="text-[0.95rem] opacity-70">Sur place ou à distance</li>
           </ul>
         </div>
       </div>
 
       <div className="relative max-w-7xl mx-auto mt-12 pt-6 border-t border-cream/25 flex flex-wrap justify-between items-center gap-4 text-[0.85rem] opacity-75">
         <span> © 2026 Nicolas Samier · Tous droits réservés </span>
-        <span> Fait main avec Next.js — déployé sur Vercel </span>
+        <span> Construit avec Next.js et TypeScript </span>
       </div>
     </footer>
   );

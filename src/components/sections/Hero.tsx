@@ -16,15 +16,14 @@ export function Hero() {
             Disponible · freelance &amp; CDI
           </span>
 
-          <h1 className="mt-2 mb-7 animate-[fade-in-up_0.8s_ease-out_0.15s_backwards]">
-            Je suis Nicolas,
-            <br />
-            <em>développeur</em> <Highlight>fullstack</Highlight>.
+          <h1 className="mt-2 mb-7 text-[clamp(2.5rem,5.5vw,4.75rem)] break-words animate-[fade-in-up_0.8s_ease-out_0.15s_backwards]">
+            Je conçois des <Highlight>applications web</Highlight> et de l&apos;<em>IA utile</em>.
           </h1>
 
           <p className="text-[1.2rem] max-w-[50ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
-            Sites, applications web et automatisations pour startups, petites boîtes et freelances.
-            Du brief à la mise en ligne — sans friction.
+            Nicolas Samier, développeur web. Je conçois des sites, des applications, des
+            automatisations et de l&apos;IA — du premier échange à la mise en ligne. Disponible en
+            CDI comme en freelance, dans les Hauts-de-France et à distance.
           </p>
 
           <div className="flex gap-4 flex-wrap animate-[fade-in-up_0.8s_ease-out_0.42s_backwards]">
@@ -51,16 +50,16 @@ export function Hero() {
 
           <div className="mt-10 pt-8 border-t-[1.5px] border-dashed border-ink flex flex-wrap gap-x-8 gap-y-3 font-display text-[0.9rem] animate-[fade-in-up_0.8s_ease-out_0.55s_backwards]">
             <div className="flex items-center gap-1.5">
-              <strong className="font-semibold">📍 Pas-de-Calais</strong>
-              <span className="opacity-70">· remote France</span>
+              <strong className="font-semibold">📍 Hauts-de-France</strong>
+              <span className="opacity-70">· sur place ou à distance</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <strong className="font-semibold">3 ans</strong>
-              <span className="opacity-70">d&apos;XP fullstack</span>
+              <strong className="font-semibold">Dev</strong>
+              <span className="opacity-70">depuis 2018</span>
             </div>
             <div className="flex items-center gap-1.5">
               <strong className="font-semibold">Stack :</strong>
-              <span className="opacity-70">Next · Node · WP · AWS</span>
+              <span className="opacity-70">Next · Node · AWS · IA</span>
             </div>
           </div>
         </div>

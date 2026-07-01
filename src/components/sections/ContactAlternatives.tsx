@@ -33,7 +33,7 @@ export function ContactAlternatives() {
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/samier-nicolas/"
             className="card card-sky text-center"
             rel="noopener noreferrer"
             target="_blank"

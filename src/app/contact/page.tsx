@@ -3,7 +3,6 @@ import { ContactHero } from "@/components/sections/ContactHero";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { ContactAlternatives } from "@/components/sections/ContactAlternatives";
 import { ContactFaq } from "@/components/sections/ContactFaq";
-import { ContactNewsletter } from "@/components/sections/ContactNewsletter";
 import { ContactEngagement } from "@/components/sections/ContactEngagement";
 
 export const metadata: Metadata = {
@@ -19,7 +18,6 @@ export default function ContactPage() {
       <ContactForm />
       <ContactAlternatives />
       <ContactFaq />
-      <ContactNewsletter />
       <ContactEngagement />
     </main>
   );

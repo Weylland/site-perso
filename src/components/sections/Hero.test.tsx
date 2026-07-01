@@ -6,7 +6,7 @@ describe("Hero", () => {
     render(<Hero />);
     const heading = screen.getByRole("heading", { level: 1 });
     expect(heading).toBeInTheDocument();
-    expect(heading).toHaveTextContent("Nicolas");
+    expect(heading).toHaveTextContent("applications web");
   });
 
   it("renders the primary CTA pointing to contact", () => {
@@ -27,6 +27,6 @@ describe("Hero", () => {
 
   it("renders the eyebrow availability label", () => {
     render(<Hero />);
-    expect(screen.getByText(/Disponible/i)).toBeInTheDocument();
+    expect(screen.getByText(/Disponible · freelance/i)).toBeInTheDocument();
   });
 });

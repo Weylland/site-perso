@@ -10,8 +10,10 @@ describe("Footer", () => {
   it("renders all internal links with correct hrefs", () => {
     render(<Footer />);
     const links = [
+      { name: "Accueil", href: "/" },
       { name: "Services", href: "/services" },
       { name: "À propos", href: "/a-propos" },
+      { name: "Réalisations", href: "/realisations" },
       { name: "Contact", href: "/contact" },
       { name: "Mentions légales", href: "/mentions-legales" },
       { name: "CGV", href: "/cgv" },
@@ -25,9 +27,9 @@ describe("Footer", () => {
 
   it("renders the email link with mailto href", () => {
     render(<Footer />);
-    expect(screen.getByRole("link", { name: "contact@nicolassamier.fr" })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "samiernicolas62@gmail.com" })).toHaveAttribute(
       "href",
-      "mailto:contact@nicolassamier.fr",
+      "mailto:samiernicolas62@gmail.com",
     );
   });
 

@@ -12,17 +12,17 @@ export function AboutBio() {
         </div>
 
         <p style={{ fontSize: "1.2rem" }}>
-          Je suis développeur fullstack indépendant, avec trois ans d&apos;expérience. Je conçois et
-          développe des sites web, des applications sur mesure et des automatisations pour des
-          startups en phase d&apos;amorçage, des petites boîtes bien établies, et d&apos;autres
-          freelances qui veulent déléguer leur tech.
+          Je suis développeur web fullstack. Je conçois et développe des sites, des applications web
+          sur mesure, des automatisations et des intégrations IA — pour des entrepreneurs, des TPE,
+          des associations et d&apos;autres freelances qui veulent déléguer leur tech.
         </p>
         <p style={{ fontSize: "1.15rem" }}>
-          Côté technique, je travaille principalement avec Next.js pour les frontends performants,
-          Node.js et PHP côté serveur, WordPress pour l&apos;éditorial en autonomie, et je
-          m&apos;appuie sur AWS (API Gateway, Lambda, S3, DynamoDB) pour l&apos;infrastructure. Pour
-          tout ce qui est automatisation, j&apos;utilise n8n&nbsp;: un outil open source qui
-          remplace Zapier avec une flexibilité bien supérieure.
+          Côté technique, je travaille principalement avec Next.js et React pour les frontends
+          performants, Node.js et PHP côté serveur, WordPress / WooCommerce pour l&apos;éditorial,
+          et je m&apos;appuie sur AWS (API Gateway, Lambda, S3, DynamoDB) pour
+          l&apos;infrastructure. Pour l&apos;automatisation et l&apos;IA, j&apos;assemble des
+          pipelines avec n8n, les API Claude et Mistral, du RAG et des serveurs MCP — c&apos;est
+          exactement ce qui fait tourner mon média de veille watch·ia.
         </p>
         <p style={{ fontSize: "1.15rem" }}>
           Ma façon de bosser tient en trois points&nbsp;: comprendre le problème avant d&apos;écrire
@@ -35,9 +35,8 @@ export function AboutBio() {
         </div>
 
         <p className="mt-12" style={{ fontSize: "1.15rem" }}>
-          À côté du code, je joue de la guitare depuis l&apos;adolescence, j&apos;écoute beaucoup
-          trop de musique (prog rock, hip-hop français, soundtracks de jeux), et j&apos;accumule des
-          heures sur des jeux vidéo que je ne finirai probablement jamais.
+          À côté du code, je joue de la guitare acoustique, j&apos;écoute beaucoup de musique, et
+          j&apos;accumule des heures sur des jeux vidéo que je ne finirai probablement jamais.
         </p>
       </div>
     </section>

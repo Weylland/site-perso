@@ -1,15 +1,16 @@
 const items = [
-  "Next.js 16",
+  "Next.js",
   "TypeScript",
+  "React",
   "Node.js",
   "PHP",
   "WordPress",
-  "AWS Lambda",
+  "AWS",
   "n8n",
+  "Supabase",
+  "Mistral API",
+  "Claude",
   "Tailwind",
-  "Stripe",
-  "Vercel",
-  "React",
 ];
 
 export function Marquee() {

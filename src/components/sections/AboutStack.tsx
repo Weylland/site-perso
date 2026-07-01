@@ -1,23 +1,23 @@
 const groups = [
   {
     title: "Front-end",
-    desc: "Frameworks modernes pour des interfaces rapides, accessibles et maintenables.",
-    tags: ["Next.js 15", "React 18", "TypeScript", "Tailwind v4", "shadcn/ui", "Framer Motion"],
+    desc: "Interfaces rapides, responsive et accessibles.",
+    tags: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "Leaflet"],
   },
   {
-    title: "Back-end",
-    desc: "APIs REST et GraphQL, auth, paiements, intégrations.",
-    tags: ["Node.js", "tRPC", "PHP 8", "WordPress", "Prisma", "Postgres"],
+    title: "Back-end & données",
+    desc: "APIs, auth, intégrations et bases de données.",
+    tags: ["Node.js", "Express", "PHP", "WordPress / WooCommerce", "MySQL", "SQLite", "Supabase"],
   },
   {
-    title: "Infrastructure",
-    desc: "Déploiement, monitoring, scaling.",
-    tags: ["AWS Lambda", "API Gateway", "S3", "DynamoDB", "Vercel", "Cloudflare"],
+    title: "Infrastructure & cloud",
+    desc: "Déploiement, fonctions serverless, hébergement.",
+    tags: ["AWS Lambda", "API Gateway", "S3", "DynamoDB", "Vercel", "Railway", "Git / GitHub"],
   },
   {
-    title: "Outils & workflow",
-    desc: "Automatisation, paiements, emails transactionnels.",
-    tags: ["n8n", "Stripe", "Resend", "Figma", "GitHub Actions"],
+    title: "IA & automatisation",
+    desc: "Pipelines LLM, RAG et agents sur mesure.",
+    tags: ["Claude API / MCP", "Mistral API", "n8n", "RAG", "Basic Memory"],
   },
 ];
 
@@ -36,8 +36,8 @@ export function AboutStack() {
             <em>je bosse</em>.
           </h2>
           <p className="mt-5 max-w-[58ch] mx-auto text-[1.1rem] opacity-80">
-            Pas de hype pour la hype. Chaque techno a été choisie parce qu&apos;elle résout un
-            problème concret sur mes projets clients.
+            Pas une liste pour faire joli : ce sont les outils avec lesquels je travaille vraiment,
+            au quotidien.
           </p>
         </div>
 

@@ -1,35 +1,35 @@
 const items = [
   {
-    q: "Quels délais pour un site vitrine ?",
-    a: "Entre 2 et 4 semaines selon la complexité du périmètre, à compter de la signature du devis et de la réception des contenus. Pour un projet urgent, j'ouvre parfois des slots express — demande-moi.",
+    q: "Tu fais quoi, concrètement ?",
+    a: "Des sites vitrine, des applications web sur mesure, de l'automatisation et de l'intelligence artificielle. Je prends le projet du début — comprendre ton besoin — jusqu'à la mise en ligne.",
   },
   {
-    q: "WordPress ou Next.js, qu'est-ce que tu choisis ?",
-    a: "Ça dépend du besoin. WordPress si l'équipe éditera beaucoup de contenu en autonomie et que l'écosystème de plugins couvre le besoin. Next.js si la perf, le SEO technique, ou les fonctionnalités sur-mesure sont prioritaires. Je te conseille honnêtement en fonction de ta situation, pas de ma préférence.",
+    q: "Tu fais vraiment de l'IA, ou c'est juste un mot à la mode ?",
+    a: "Du concret. Par exemple : un assistant qui répond à partir de tes propres documents, de la rédaction automatique, ou un outil qui récupère et trie de l'information à ta place. C'est exactement ce qui fait tourner mon média de veille, watch·ia.",
+  },
+  {
+    q: "Tu travailles avec quelles technologies ?",
+    a: "Celle qui colle le mieux à ton besoin — je ne t'enferme pas dans un outil. WordPress si tu veux gérer ton contenu toi-même, du développement sur mesure si tu as besoin de rapidité ou de fonctions particulières. On choisit ensemble, selon ton projet et ton budget — pas selon mes habitudes.",
   },
   {
     q: "Tu peux reprendre un site existant ?",
-    a: "Oui, via la formule TMA. On fait un audit rapide ensemble, on liste les priorités et les risques techniques, puis on avance par lots. Je travaille aussi bien sur du code propre que sur du legacy un peu embrouillé.",
+    a: "Oui, c'est la formule maintenance & dépannage. On regarde l'existant ensemble, on classe les priorités, puis on avance par petites étapes. Que le site soit bien fait ou un peu bricolé, je m'adapte.",
   },
   {
-    q: "Comment on travaille à distance concrètement ?",
-    a: "Kickoff en visio pour se caler. Ensuite échanges async sur un canal dédié (Slack, Discord ou email), previews déployées sur Vercel ou un staging, point hebdo de 15 min pour valider. Tu peux joindre par téléphone en cas d'urgence.",
+    q: "Comment on travaille à distance ?",
+    a: "Un premier appel en visio pour se caler. Ensuite on échange par messages quand ça nous arrange, je te montre des versions de test en ligne au fur et à mesure, et un point court chaque semaine. Le téléphone reste possible en cas d'urgence.",
   },
   {
-    q: "C'est quoi n8n exactement ?",
-    a: "Un outil d'automatisation visuel (comme Zapier ou Make, en open source et beaucoup plus flexible) qui permet de connecter tes applications entre elles. Exemple concret : quand un paiement Stripe arrive, n8n crée la facture dans ton outil de compta, envoie le reçu au client, met à jour la base clients dans Notion, et notifie ton canal Slack.",
-  },
-  {
-    q: "Tu prends aussi des missions longues ou du CDI ?",
-    a: "Oui. Je suis ouvert à des missions longues en TJM (350-500 €/j selon contexte) et à un CDI si l'équipe et le projet sont intéressants. On peut en discuter sans engagement.",
+    q: "Tu cherches un CDI ou du freelance ?",
+    a: "Les deux. Je suis disponible en freelance, pour des missions courtes comme longues, et aussi pour un poste en CDI si l'équipe et le projet me parlent. On en discute sans engagement.",
   },
   {
     q: "Est-ce que tu fais aussi le design ?",
-    a: "Sur les sites vitrine et les applications, oui — je conçois l'UI et je la code. Pour les gros projets, je bosse volontiers avec un designer en place. Si tu as déjà une maquette Figma, tout va bien.",
+    a: "Sur les sites et les applications, oui — je conçois et je code le design. Pour les gros projets, je travaille volontiers avec un graphiste déjà en place. Si tu as déjà une maquette, parfait.",
   },
   {
     q: "Comment se passe le paiement ?",
-    a: "30 % à la signature du devis, 70 % à la livraison. Virement ou carte (Stripe). Pour les missions longues, facturation mensuelle. Auto-entrepreneur, TVA non applicable.",
+    a: "30 % à la commande, le reste à la livraison. Virement ou carte. Pour les missions longues, une facture par mois. En auto-entrepreneur, la TVA n'est pas applicable.",
   },
 ];
 

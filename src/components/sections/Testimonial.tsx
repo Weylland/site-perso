@@ -23,15 +23,15 @@ export function Testimonial() {
           <div className="quote-author">
             <div className="quote-avatar">CG</div>
             <div>
-              <strong>CGR — Association sportive</strong>
-              <span>Site WordPress sur mesure · refonte + TMA</span>
+              <strong>CGR — Association d&apos;accompagnement</strong>
+              <span>Site WordPress / Elementor · refonte + maintenance</span>
             </div>
           </div>
         </div>
 
         <p className="text-center mt-12">
           <a
-            href="https://cgr5962.asso.fr"
+            href="https://www.cgr5962.asso.fr/"
             target="_blank"
             rel="noopener noreferrer"
             className="link-cta"

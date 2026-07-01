@@ -1,15 +1,15 @@
 const items = [
   {
     q: "Je n'ai pas de cahier des charges, je peux quand même écrire ?",
-    a: "Oui, c'est même le cas le plus fréquent. Décris le problème avec tes mots, dis ce qui est bloquant aujourd'hui et à quoi ressemblerait une solution qui te conviendrait. Je te pose les bonnes questions ensuite.",
+    a: "Oui, c'est même le cas le plus fréquent. Décris le problème avec tes mots, dis ce qui te bloque aujourd'hui et à quoi ressemblerait une solution qui te conviendrait. Je te pose les bonnes questions ensuite.",
   },
   {
-    q: "Tu peux signer un NDA avant l'échange ?",
-    a: "Oui, sans souci. Dis-le dans le message, je t'envoie un modèle simple ou je signe le tien. Aucun contenu n'est partagé avant accord.",
+    q: "Tu peux signer un accord de confidentialité ?",
+    a: "Oui, sans souci. Dis-le dans ton message : je t'envoie un modèle simple ou je signe le tien. Rien n'est partagé avant accord.",
   },
   {
     q: "Quels projets tu acceptes moins ?",
-    a: "Je ne prends pas de projets basés uniquement sur du no-code sans couche dev (Webflow seul, Softr pur). Je ne prends pas non plus de sites pour secteurs réglementés que je ne maîtrise pas (santé, crypto, jeux d'argent).",
+    a: "Les projets montés uniquement avec des outils sans code (comme Webflow ou Softr), sans vrai développement derrière. Et les secteurs très réglementés que je ne maîtrise pas (santé, crypto, jeux d'argent).",
   },
 ];
 

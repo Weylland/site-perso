@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <path d="M110 18 L38 108 L92 108 L78 182 L162 88 L104 88 Z" fill="#FFD93D" stroke="#0A0A0A" stroke-width="5" stroke-linejoin="round"></path>
-  <path d="M100 48 L70 88 L104 88" stroke="#0A0A0A" stroke-width="2" fill="none" stroke-linejoin="round" opacity="0.4"></path>
+  <path d="M120 22 L54 104 C51 108 53 113 58 113 L90 113 L80 176 C79 182 87 185 91 179 L150 92 C153 88 151 83 146 83 L112 83 L126 28 C128 22 120 18 116 23 Z" fill="#FFD93D" stroke="#0A0A0A" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M108 60 L84 102 L106 102" stroke="#0A0A0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
 </svg>
