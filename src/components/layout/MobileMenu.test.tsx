@@ -59,4 +59,42 @@ describe("MobileMenu", () => {
 
     expect(screen.getByRole("navigation", { name: "Navigation mobile" })).toHaveAttribute("inert");
   });
+
+  it("renders the legal links with correct hrefs", async () => {
+    const user = userEvent.setup();
+    render(<MobileMenu />);
+    await user.click(screen.getByRole("button", { name: "Ouvrir le menu" }));
+
+    const legalLinks = [
+      { name: "Mentions légales", href: "/mentions-legales" },
+      { name: "CGV", href: "/cgv" },
+      { name: "Confidentialité", href: "/confidentialite" },
+    ];
+    legalLinks.forEach(({ name, href }) => {
+      expect(screen.getByRole("link", { name })).toHaveAttribute("href", href);
+    });
+  });
+
+  it("renders external social links with security attributes", async () => {
+    const user = userEvent.setup();
+    render(<MobileMenu />);
+    await user.click(screen.getByRole("button", { name: "Ouvrir le menu" }));
+
+    ["LinkedIn", "GitHub"].forEach((name) => {
+      const link = screen.getByRole("link", { name });
+      expect(link).toHaveAttribute("target", "_blank");
+      expect(link).toHaveAttribute("rel", "noopener noreferrer");
+    });
+  });
+
+  it("renders the CV link pointing to the PDF", async () => {
+    const user = userEvent.setup();
+    render(<MobileMenu />);
+    await user.click(screen.getByRole("button", { name: "Ouvrir le menu" }));
+
+    expect(screen.getByRole("link", { name: "CV PDF" })).toHaveAttribute(
+      "href",
+      "/cv-nicolas-samier.pdf",
+    );
+  });
 });
