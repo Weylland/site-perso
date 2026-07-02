@@ -38,7 +38,7 @@ export function AboutCv() {
             ↓
           </span>
         </a>
-        <p className="note-small">Mis à jour en juin 2026 · PDF · 1 page</p>
+        <p className="note-small">Mis à jour en juillet 2026 · PDF · 1 page</p>
       </div>
     </section>
   );
