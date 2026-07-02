@@ -1001,3 +1001,46 @@
     animation-range: entry 0% cover 25%;
   }
 }
+
+/* View Transitions entre pages : header/footer restent fixes, seul le
+   contenu (groupe "root") s'anime. */
+@media (prefers-reduced-motion: no-preference) {
+  header {
+    view-transition-name: site-header;
+  }
+  footer {
+    view-transition-name: site-footer;
+  }
+
+  ::view-transition-group(site-header),
+  ::view-transition-group(site-footer) {
+    animation: none;
+  }
+  ::view-transition-old(site-header),
+  ::view-transition-new(site-header),
+  ::view-transition-old(site-footer),
+  ::view-transition-new(site-footer) {
+    animation: none;
+  }
+
+  ::view-transition-old(root) {
+    animation: 180ms ease-in both page-exit;
+  }
+  ::view-transition-new(root) {
+    animation: 220ms ease-out both page-enter;
+  }
+}
+
+@keyframes page-exit {
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
