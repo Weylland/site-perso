@@ -423,10 +423,18 @@
     transform 180ms ease-out,
     box-shadow 180ms ease-out;
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: var(--color-ink);
   position: relative;
   overflow: hidden;
+
+  /* Grid rows stretch cards to equal height; pin the CTA (always the
+     last element in a card) to the bottom instead of letting it float
+     right after the content, so it lines up across every card. */
+  & > :last-child {
+    margin-top: auto;
+  }
 
   &:hover {
     transform: translate(4px, 4px) rotate(-0.6deg);
