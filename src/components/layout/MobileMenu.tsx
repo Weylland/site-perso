@@ -87,7 +87,7 @@ export function MobileMenu() {
               type="button"
               aria-label="Fermer le menu"
               onClick={() => setOpen(false)}
-              className="absolute top-4 right-8 inline-flex items-center justify-center w-11 h-11 bg-ink border-[2.5px] border-cream cursor-pointer transition-transform duration-150 ease-out hover:rotate-90"
+              className="absolute z-10 top-4 right-8 inline-flex items-center justify-center w-11 h-11 bg-ink border-[2.5px] border-cream cursor-pointer transition-transform duration-150 ease-out hover:rotate-90"
             >
               <span aria-hidden className="relative block w-5 h-5">
                 <span className="absolute top-1/2 left-0 w-5 h-[2.5px] bg-cream rotate-45" />
@@ -104,7 +104,7 @@ export function MobileMenu() {
                     style={{
                       boxShadow: `4px 4px 0 var(--color-${accentColors[i % accentColors.length]})`,
                     }}
-                    className="inline-flex items-center justify-center px-6 py-2.5 bg-ink border-[2.5px] border-cream font-display font-semibold text-cream text-[1.35rem] tracking-[-0.02em] transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+                    className="flex items-center justify-center w-[250px] px-6 py-2.5 bg-ink border-[2.5px] border-cream font-display font-semibold text-cream text-[1.35rem] tracking-[-0.02em] transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
                   >
                     {label}
                   </Link>
