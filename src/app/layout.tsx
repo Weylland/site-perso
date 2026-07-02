@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { ViewTransitionsRouter } from "@/components/ViewTransitionsRouter";
 import { siteConfig, buildMetadata } from "@/lib/site-config";
 
 const inter = Inter({
@@ -45,7 +44,6 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <JsonLd />
-        <ViewTransitionsRouter />
         <Header />
         {children}
         <Footer />
