@@ -431,9 +431,12 @@
 
   /* Grid rows stretch cards to equal height; pin the CTA (always the
      last element in a card) to the bottom instead of letting it float
-     right after the content, so it lines up across every card. */
+     right after the content, so it lines up across every card.
+     padding-top guarantees a minimum gap for whichever card is tallest
+     in its row (no leftover space for margin-top: auto to consume). */
   & > :last-child {
     margin-top: auto;
+    padding-top: 1.5rem;
   }
 
   &:hover {
