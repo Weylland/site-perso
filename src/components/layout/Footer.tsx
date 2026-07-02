@@ -13,8 +13,8 @@ export default function Footer() {
         NICOLAS SAMIER
       </span>
 
-      <div className="relative max-w-7xl mx-auto grid grid-cols-2 min-[900px]:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10">
-        <div>
+      <div className="relative max-w-7xl mx-auto grid grid-cols-1 min-[600px]:grid-cols-2 min-[900px]:grid-cols-[1.5fr_1fr_1fr_1fr] gap-x-10 gap-y-12">
+        <div className="min-[600px]:col-span-2 min-[900px]:col-span-1">
           <Link
             href="/"
             className="inline-flex items-center gap-3 group hover:underline underline-offset-4"
@@ -128,7 +128,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto mt-12 pt-6 border-t border-cream/25 flex flex-wrap justify-between items-center gap-4 text-[0.85rem] opacity-75">
+      <div className="relative max-w-7xl mx-auto mt-12 pt-6 border-t border-cream/25 flex flex-col min-[600px]:flex-row items-center justify-center min-[600px]:justify-between gap-2 min-[600px]:gap-4 text-center text-[0.85rem] opacity-75">
         <span> © 2026 Nicolas Samier · Tous droits réservés </span>
         <span> Construit avec Next.js et TypeScript </span>
       </div>
