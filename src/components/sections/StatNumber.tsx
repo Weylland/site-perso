@@ -9,22 +9,20 @@ type Props = {
 };
 
 export function StatNumber({ target, prefix, suffix }: Props) {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(target);
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    if (!("IntersectionObserver" in window)) {
-      const raf = requestAnimationFrame(() => setValue(target));
-      return () => cancelAnimationFrame(raf);
-    }
+    if (!("IntersectionObserver" in window)) return;
 
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          setValue(0);
           const duration = 1400;
           const start = performance.now();
           function tick(now: number) {
