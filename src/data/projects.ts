@@ -40,7 +40,7 @@ export const projects: Project[] = [
     year: "2025 — aujourd'hui",
     url: "https://rival-rush.com",
     tech: ["Next.js", "TypeScript", "Supabase"],
-    sticker: "/stickers/gamepad.svg",
+    sticker: "/stickers/gamepad.png",
     accent: "mint",
     featured: true,
   },

@@ -66,7 +66,7 @@ export function Hero() {
 
         <div className="relative min-h-[460px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
-            src="/stickers/laptop.svg"
+            src="/stickers/laptop.png"
             alt=""
             width={200}
             height={200}

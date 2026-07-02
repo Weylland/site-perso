@@ -198,7 +198,7 @@ export function ServicesFormules() {
               06
             </span>
             <Image
-              src="/stickers/wrench.svg"
+              src="/stickers/wrench.png"
               alt=""
               width={72}
               height={72}

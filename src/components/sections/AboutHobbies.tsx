@@ -14,7 +14,7 @@ const hobbies = [
     body: "Toujours un casque sur les oreilles quand je code. Un peu de tout, selon l'humeur du moment.",
   },
   {
-    src: "/stickers/gamepad.svg",
+    src: "/stickers/gamepad.png",
     label: "Jeux vidéo",
     color: "card-sky",
     body: "Des heures sur des jeux que je ne finis jamais — et une pile qui ne cesse de grandir.",

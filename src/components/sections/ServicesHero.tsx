@@ -79,7 +79,7 @@ export function ServicesHero() {
             }}
           />
           <Image
-            src="/stickers/wrench.svg"
+            src="/stickers/wrench.png"
             alt=""
             width={200}
             height={200}
