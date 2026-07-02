@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Site personnel — Nicolas Samier
 
-## Getting Started
+Site vitrine de [Nicolas Samier](https://nicolas-samier.fr), développeur web fullstack : portfolio, prestations freelance et point de contact (CDI & freelance).
 
-First, run the development server:
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, Turbopack) + [React 19](https://react.dev)
+- TypeScript 5 strict
+- Tailwind CSS v4
+- Vitest 4 + React Testing Library
+- ESLint 9 + Prettier 3 + Husky (pre-commit lint-staged)
+- GitHub Actions (lint, typecheck, format, tests, build sur chaque push/PR)
+
+## Démarrer en local
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le site tourne sur [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Commandes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev              # serveur de dev (Turbopack)
+pnpm build             # build de production
+pnpm start             # serveur de production (après build)
 
-## Learn More
+pnpm verify            # lint + typecheck + format:check + test + build
+pnpm verify:quick      # verify sans le build
 
-To learn more about Next.js, take a look at the following resources:
+pnpm lint              # ESLint
+pnpm typecheck         # tsc --noEmit
+pnpm format             # Prettier --write
+pnpm test               # Vitest (run unique)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/                # Routes (App Router) : accueil, services, à-propos, réalisations, contact, pages légales
+├── components/
+│   ├── ui/              # Composants primitifs (Button, Pill, Highlight...)
+│   ├── layout/           # Header, Footer, navigation mobile
+│   └── sections/         # Sections de page (Hero, Services, Stack, FAQ...)
+├── data/                # Données statiques (projets)
+└── lib/                 # Config SEO partagée (metadata, JSON-LD)
+public/
+└── stickers/            # Illustrations SVG/PNG custom
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Design néo-brutalisme soft pastel — détails dans [AGENTS.md](./AGENTS.md).
