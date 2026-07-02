@@ -4,6 +4,8 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 
+const accentColors = ["sunshine", "peach", "mint", "sky"] as const;
+
 const links = [
   { href: "/", label: "Accueil" },
   { href: "/services", label: "Services" },
@@ -71,8 +73,16 @@ export function MobileMenu() {
             id="mobile-nav"
             aria-label="Navigation mobile"
             inert={!open}
-            className={`fixed inset-0 z-[100] bg-ink border-l-[4px] border-cream flex flex-col transition-transform duration-300 ease-out ${open ? "translate-x-0" : "translate-x-full"}`}
+            className={`fixed inset-0 z-[100] overflow-hidden bg-ink border-l-[4px] border-cream flex flex-col transition-transform duration-300 ease-out ${open ? "translate-x-0" : "translate-x-full"}`}
           >
+            <span
+              aria-hidden
+              className="absolute -bottom-10 left-1/2 -translate-x-1/2 font-display font-bold whitespace-nowrap pointer-events-none text-transparent text-[clamp(3.5rem,18vw,7rem)] tracking-[-0.04em]"
+              style={{ WebkitTextStroke: "1.5px rgba(254, 250, 243, 0.12)" }}
+            >
+              NICOLAS SAMIER
+            </span>
+
             <button
               type="button"
               aria-label="Fermer le menu"
@@ -85,16 +95,16 @@ export function MobileMenu() {
               </span>
             </button>
 
-            <ul className="flex-1 flex flex-col items-center justify-center">
-              {links.map(({ href, label }) => (
-                <li
-                  key={href}
-                  className="border-b-[1.5px] border-dashed border-cream/40 last:border-none"
-                >
+            <ul className="relative flex-1 flex flex-col items-center justify-center gap-3">
+              {links.map(({ href, label }, i) => (
+                <li key={href}>
                   <Link
                     href={href}
                     onClick={() => setOpen(false)}
-                    className="block px-4 py-3 font-display font-semibold text-cream text-[2rem] tracking-[-0.02em] transition-opacity hover:opacity-70"
+                    style={{
+                      boxShadow: `4px 4px 0 var(--color-${accentColors[i % accentColors.length]})`,
+                    }}
+                    className="inline-flex items-center justify-center px-6 py-2.5 bg-ink border-[2.5px] border-cream font-display font-semibold text-cream text-[1.35rem] tracking-[-0.02em] transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
                   >
                     {label}
                   </Link>
@@ -102,7 +112,7 @@ export function MobileMenu() {
               ))}
             </ul>
 
-            <div className="flex flex-col items-center gap-4 px-8 pb-8">
+            <div className="relative flex flex-col items-center gap-4 px-8 pb-8">
               <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 font-sans text-[0.8rem] text-cream/70">
                 {legalLinks.map(({ href, label }, i) => (
                   <li key={href} className="flex items-center gap-3">
