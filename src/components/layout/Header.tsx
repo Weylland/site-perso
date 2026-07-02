@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { MobileMenu } from "./MobileMenu";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-[100] bg-cream/90 backdrop-blur-md border-b-[2.5px] border-ink">
+    <header className="relative sticky top-0 z-[100] bg-cream/90 backdrop-blur-md border-b-[2.5px] border-ink">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-8 py-[0.9rem]">
         <Link href="/" className="flex items-center gap-3 group">
           <span className="relative inline-flex items-center justify-center w-11 h-11 bg-peach border-[2.5px] border-ink shadow-brutal font-display font-bold text-[1.15rem] overflow-hidden transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-[-4deg] group-hover:shadow-none group-hover:bg-sunshine">
@@ -45,6 +46,8 @@ export default function Header() {
               →
             </span>
           </Link>
+
+          <MobileMenu />
         </nav>
       </div>
     </header>
