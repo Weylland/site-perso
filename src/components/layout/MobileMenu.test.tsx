@@ -1,11 +1,19 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MobileMenu } from "./MobileMenu";
 
+const links = [
+  { name: "Accueil", href: "/" },
+  { name: "Services", href: "/services" },
+  { name: "À propos", href: "/a-propos" },
+  { name: "Réalisations", href: "/realisations" },
+  { name: "Contact", href: "/contact" },
+];
+
 describe("MobileMenu", () => {
-  it("hides the nav panel until the toggle is opened", () => {
+  it("renders the nav panel as inert until opened", () => {
     render(<MobileMenu />);
-    expect(screen.queryByRole("navigation")).not.toBeInTheDocument();
+    expect(screen.getByRole("navigation", { name: "Navigation mobile" })).toHaveAttribute("inert");
   });
 
   it("opens the nav panel with all links when the toggle is clicked", async () => {
@@ -14,18 +22,22 @@ describe("MobileMenu", () => {
 
     await user.click(screen.getByRole("button", { name: "Ouvrir le menu" }));
 
-    const nav = screen.getByRole("navigation", { name: "Navigation mobile" });
-    const links = [
-      { name: "Accueil", href: "/" },
-      { name: "Services", href: "/services" },
-      { name: "À propos", href: "/a-propos" },
-      { name: "Réalisations", href: "/realisations" },
-      { name: "Contact", href: "/contact" },
-    ];
+    expect(screen.getByRole("navigation", { name: "Navigation mobile" })).not.toHaveAttribute(
+      "inert",
+    );
     links.forEach(({ name, href }) => {
       expect(screen.getByRole("link", { name })).toHaveAttribute("href", href);
     });
-    expect(nav).toBeInTheDocument();
+  });
+
+  it("closes the nav panel when the close button is clicked", async () => {
+    const user = userEvent.setup();
+    render(<MobileMenu />);
+
+    await user.click(screen.getByRole("button", { name: "Ouvrir le menu" }));
+    await user.click(screen.getByRole("button", { name: "Fermer le menu" }));
+
+    expect(screen.getByRole("navigation", { name: "Navigation mobile" })).toHaveAttribute("inert");
   });
 
   it("closes the nav panel when a link is clicked", async () => {
@@ -35,20 +47,16 @@ describe("MobileMenu", () => {
     await user.click(screen.getByRole("button", { name: "Ouvrir le menu" }));
     await user.click(screen.getByRole("link", { name: "Services" }));
 
-    expect(screen.queryByRole("navigation")).not.toBeInTheDocument();
+    expect(screen.getByRole("navigation", { name: "Navigation mobile" })).toHaveAttribute("inert");
   });
 
-  it("toggles the button label and aria-expanded state", async () => {
+  it("closes the nav panel when Escape is pressed", async () => {
     const user = userEvent.setup();
     render(<MobileMenu />);
 
-    const toggle = screen.getByRole("button", { name: "Ouvrir le menu" });
-    expect(toggle).toHaveAttribute("aria-expanded", "false");
+    await user.click(screen.getByRole("button", { name: "Ouvrir le menu" }));
+    fireEvent.keyDown(window, { key: "Escape" });
 
-    await user.click(toggle);
-    expect(screen.getByRole("button", { name: "Fermer le menu" })).toHaveAttribute(
-      "aria-expanded",
-      "true",
-    );
+    expect(screen.getByRole("navigation", { name: "Navigation mobile" })).toHaveAttribute("inert");
   });
 });
