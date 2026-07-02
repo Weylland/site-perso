@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 
 const links = [
@@ -14,6 +15,21 @@ const links = [
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (!open) return;
+
+    document.body.style.overflow = "hidden";
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
+
   return (
     <div className="min-[820px]:hidden">
       <button
@@ -22,7 +38,7 @@ export function MobileMenu() {
         aria-controls="mobile-nav"
         aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
         onClick={() => setOpen((prev) => !prev)}
-        className="relative inline-flex flex-col items-center justify-center gap-[5px] w-11 h-11 bg-cream border-[2.5px] border-ink shadow-brutal-sm cursor-pointer"
+        className="relative z-[110] inline-flex flex-col items-center justify-center gap-[5px] w-11 h-11 bg-cream border-[2.5px] border-ink shadow-brutal-sm cursor-pointer"
       >
         <span
           aria-hidden
@@ -34,27 +50,29 @@ export function MobileMenu() {
         />
       </button>
 
-      {open && (
-        <nav
-          id="mobile-nav"
-          aria-label="Navigation mobile"
-          className="absolute top-full left-0 w-full bg-cream border-b-[2.5px] border-ink shadow-brutal-lg"
-        >
-          <ul className="max-w-7xl mx-auto flex flex-col px-8 py-4">
-            {links.map(({ href, label }) => (
-              <li key={href} className="border-b border-ink/10 last:border-none">
-                <Link
-                  href={href}
-                  onClick={() => setOpen(false)}
-                  className="block py-3 font-display font-medium text-[1.05rem]"
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      {open &&
+        createPortal(
+          <nav
+            id="mobile-nav"
+            aria-label="Navigation mobile"
+            className="fixed inset-0 z-[100] bg-ink flex flex-col items-center justify-center"
+          >
+            <ul className="flex flex-col items-center gap-2">
+              {links.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    onClick={() => setOpen(false)}
+                    className="block px-4 py-3 font-display font-semibold text-cream text-[2rem] tracking-[-0.02em] transition-opacity hover:opacity-70"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>,
+          document.body,
+        )}
     </div>
   );
 }
