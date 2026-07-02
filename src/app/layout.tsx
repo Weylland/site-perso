@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk, Fraunces } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { siteConfig, buildMetadata } from "@/lib/site-config";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,9 +24,12 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Nicolas Samier — Développeur fullstack (CDI & freelance)",
-  description:
-    "Développeur web fullstack, Hauts-de-France — sur place ou à distance. Sites et applications web (Next.js, Node), infrastructure AWS, automatisation et IA. Disponible en CDI comme en freelance.",
+  metadataBase: new URL(siteConfig.url),
+  ...buildMetadata({ title: siteConfig.title, description: siteConfig.description, path: "/" }),
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  formatDetection: { email: false, address: false, telephone: false },
 };
 
 export default function RootLayout({
@@ -38,6 +43,7 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <JsonLd />
         <Header />
         {children}
         <Footer />

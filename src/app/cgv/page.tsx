@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/site-config";
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: "Conditions générales de vente — Nicolas Samier",
   description:
     "Conditions générales de vente pour les prestations de services de développement de Nicolas Samier.",
-};
+  path: "/cgv",
+});
 
 export default function CgvPage() {
   return (

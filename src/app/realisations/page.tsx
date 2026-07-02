@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
 import Image from "next/image";
+import { buildMetadata } from "@/lib/site-config";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { CtaFinal } from "@/components/sections/CtaFinal";
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: "Réalisations — Nicolas Samier, développeur fullstack",
   description:
     "Projets et sites réalisés par Nicolas Samier : watch·ia (média de veille IA), RivalRush (multijoueur temps réel), le site du CGR, et plus. Stack Next.js, Node, IA.",
-};
+  path: "/realisations",
+});
 
 export default function RealisationsPage() {
   return (

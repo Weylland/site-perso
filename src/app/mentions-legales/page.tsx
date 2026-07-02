@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/site-config";
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: "Mentions légales — Nicolas Samier",
   description:
     "Mentions légales du site de Nicolas Samier : éditeur, hébergeur, propriété intellectuelle, responsabilité.",
-};
+  path: "/mentions-legales",
+});
 
 export default function MentionsLegalesPage() {
   return (

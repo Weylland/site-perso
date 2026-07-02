@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/site-config";
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: "Politique de confidentialité — Nicolas Samier",
   description:
     "Politique de confidentialité et gestion des données personnelles du site de Nicolas Samier. RGPD, durées de conservation, droits.",
-};
+  path: "/confidentialite",
+});
 
 export default function ConfidentialitePage() {
   return (
