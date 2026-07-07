@@ -4,16 +4,16 @@ const items = [
     a: "Ça dépend du périmètre et du moment où tu me fournis tes contenus. On fixe une date réaliste ensemble dans le devis. Si c'est urgent, dis-le : je peux parfois prévoir un créneau prioritaire.",
   },
   {
-    q: "Tu travailles avec quelles technologies ?",
-    a: "Celle qui colle le mieux à ton besoin — je ne t'enferme pas dans un outil. WordPress si tu veux gérer ton contenu toi-même, du développement sur mesure si tu as besoin de rapidité ou de fonctions particulières. On choisit ensemble, selon ton projet et ton budget.",
+    q: "Comment tu choisis la techno pour mon projet ?",
+    a: "Ça dépend de la formule. WordPress pour un site vitrine si tu veux éditer le contenu toi-même, Next.js/React pour une application sur mesure ou quand la vitesse compte, n8n pour l'automatisation. Je te propose l'option la plus simple à maintenir pour toi, pas celle qui m'arrange.",
   },
   {
-    q: "Tu reprends un site existant ?",
-    a: "Oui, c'est la formule maintenance & dépannage. On regarde l'existant ensemble, on classe les priorités, puis on avance par petites étapes. Que ce soit propre ou un peu bricolé, je m'adapte.",
+    q: "Concrètement, comment se passe une reprise de site ?",
+    a: "Formule maintenance & dépannage : je commence par un audit rapide du code et de l'hébergement, on classe les urgences ensemble, puis on avance par petites étapes chiffrées. Pas besoin de tout refaire d'un coup.",
   },
   {
-    q: "Comment se passe le paiement ?",
-    a: "30 % à la commande, le reste à la livraison. Virement ou carte. En auto-entrepreneur, la TVA n'est pas applicable.",
+    q: "Le prix du devis est-il vraiment fixe ?",
+    a: "Oui, pour les formules forfaitaires (vitrine, CMS, automatisation) : le prix ne bouge pas sauf si tu ajoutes du périmètre en cours de route, et dans ce cas on chiffre l'avenant avant de continuer. Pour la maintenance, c'est à la tâche ou à l'heure selon ce qu'on a convenu.",
   },
   {
     q: "Missions longues ou CDI ?",
