@@ -58,13 +58,13 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative min-h-[280px] min-[900px]:min-h-[460px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
+        <div className="relative aspect-[310/290] min-[900px]:aspect-auto min-[900px]:min-h-[460px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
             src="/stickers/laptop.png"
             alt=""
             width={200}
             height={200}
-            className="absolute top-[10%] left-[15%] w-[62%] h-auto z-[3] animate-[float_6s_ease-in-out_infinite]"
+            className="absolute top-[10%] left-[10%] w-[52%] h-auto z-[3] animate-[float_6s_ease-in-out_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
@@ -72,7 +72,7 @@ export function Hero() {
             alt=""
             width={200}
             height={200}
-            className="absolute top-[5%] -right-[4%] w-[28%] h-auto z-[4] rotate-[12deg] animate-[float_5s_ease-in-out_1s_infinite]"
+            className="absolute top-[2%] right-[2%] w-[22%] h-auto z-[4] rotate-[12deg] animate-[float_5s_ease-in-out_1s_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
@@ -80,7 +80,7 @@ export function Hero() {
             alt=""
             width={200}
             height={200}
-            className="absolute -bottom-[2%] left-[5%] w-[30%] h-auto z-[4] rotate-[9deg] animate-[float_6.5s_ease-in-out_1.5s_infinite]"
+            className="absolute bottom-0 left-[2%] w-[24%] h-auto z-[4] rotate-[9deg] animate-[float_6.5s_ease-in-out_1.5s_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
@@ -88,7 +88,7 @@ export function Hero() {
             alt=""
             width={200}
             height={200}
-            className="absolute top-[40%] right-[10%] w-[18%] h-auto z-[5] animate-[spin-slow_12s_linear_infinite]"
+            className="absolute top-[45%] right-[2%] w-[14%] h-auto z-[5] animate-[spin-slow_12s_linear_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
         </div>

@@ -49,7 +49,7 @@ export function ServicesHero() {
           </div>
         </div>
 
-        <div className="relative min-h-[220px] min-[900px]:min-h-[360px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
+        <div className="relative aspect-[310/240] min-[900px]:aspect-auto min-[900px]:min-h-[360px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
             src="/stickers/bolt.svg"
             alt=""
@@ -71,9 +71,9 @@ export function ServicesHero() {
             height={200}
             className="absolute z-[4] rotate-[12deg] animate-[float_5s_ease-in-out_1s_infinite]"
             style={{
-              top: "5%",
-              right: "-4%",
-              width: "38%",
+              top: "2%",
+              right: "-2%",
+              width: "30%",
               height: "auto",
               filter: "drop-shadow(6px 6px 0 var(--color-ink))",
             }}
@@ -85,9 +85,9 @@ export function ServicesHero() {
             height={200}
             className="absolute z-[2] -rotate-[6deg] animate-[float-alt_8s_ease-in-out_0.5s_infinite]"
             style={{
-              bottom: "5%",
-              right: "4%",
-              width: "30%",
+              bottom: "0%",
+              right: "0%",
+              width: "26%",
               height: "auto",
               filter: "drop-shadow(6px 6px 0 var(--color-ink))",
             }}

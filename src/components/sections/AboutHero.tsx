@@ -53,14 +53,14 @@ export function AboutHero() {
           </div>
         </div>
 
-        <div className="relative min-h-[260px] min-[900px]:min-h-[420px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
+        <div className="relative aspect-[310/270] min-[900px]:aspect-auto min-[900px]:min-h-[420px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
             src="/stickers/ns-big.svg"
             alt=""
             width={220}
             height={220}
             aria-hidden
-            className="absolute top-[8%] left-[22%] w-[55%] h-auto z-[3] animate-[float_6s_ease-in-out_infinite]"
+            className="absolute top-[8%] left-[28%] w-[46%] h-auto z-[3] animate-[float_6s_ease-in-out_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
@@ -69,7 +69,7 @@ export function AboutHero() {
             width={120}
             height={120}
             aria-hidden
-            className="absolute top-[2%] -left-[2%] w-[28%] h-auto z-[4] rotate-[-8deg] animate-[float_5s_ease-in-out_0.8s_infinite]"
+            className="absolute top-[2%] left-0 w-[22%] h-auto z-[4] rotate-[-8deg] animate-[float_5s_ease-in-out_0.8s_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
@@ -78,7 +78,7 @@ export function AboutHero() {
             width={120}
             height={120}
             aria-hidden
-            className="absolute bottom-[4%] right-[2%] w-[28%] h-auto z-[4] rotate-[6deg] animate-[float_6.5s_ease-in-out_1.2s_infinite]"
+            className="absolute bottom-0 right-0 w-[22%] h-auto z-[4] rotate-[6deg] animate-[float_6.5s_ease-in-out_1.2s_infinite]"
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
