@@ -1,18 +1,21 @@
 "use server";
 import { redirect } from "next/navigation";
 import { siteConfig } from "@/lib/site-config";
+import { buildContactEmailHtml, buildContactEmailText } from "@/lib/contact-email";
 
 export async function sendContactForm(_prev: unknown, formData: FormData) {
   const honeypot = formData.get("website") as string;
   if (honeypot) redirect("/contact/merci");
 
-  const nom = formData.get("nom") as string;
-  const email = formData.get("email") as string;
-  const structure = formData.get("structure") as string;
-  const type = formData.get("type") as string;
-  const budget = formData.get("budget") as string;
-  const delai = formData.get("delai") as string;
-  const message = formData.get("message") as string;
+  const submission = {
+    nom: formData.get("nom") as string,
+    email: formData.get("email") as string,
+    structure: (formData.get("structure") as string) || undefined,
+    type: formData.get("type") as string,
+    budget: (formData.get("budget") as string) || undefined,
+    delai: (formData.get("delai") as string) || undefined,
+    message: formData.get("message") as string,
+  };
 
   const errorMessage = `Un problème est survenu lors de l'envoi. Réessaie, ou écris-moi directement à ${siteConfig.email}.`;
 
@@ -30,20 +33,10 @@ export async function sendContactForm(_prev: unknown, formData: FormData) {
           email: `contact@${new URL(siteConfig.url).hostname}`,
         },
         to: [{ email: siteConfig.email, name: siteConfig.name }],
-        replyTo: { email, name: nom },
-        subject: `Nouveau message de ${nom}`,
-        textContent: [
-          `Nom : ${nom}`,
-          `Email : ${email}`,
-          structure && `Structure : ${structure}`,
-          `Type de projet : ${type}`,
-          budget && `Budget estimé : ${budget}`,
-          delai && `Délai : ${delai}`,
-          "",
-          message,
-        ]
-          .filter(Boolean)
-          .join("\n"),
+        replyTo: { email: submission.email, name: submission.nom },
+        subject: `Nouveau message de ${submission.nom}`,
+        htmlContent: buildContactEmailHtml(submission),
+        textContent: buildContactEmailText(submission),
       }),
     });
 
