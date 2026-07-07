@@ -169,7 +169,7 @@ export default function ConfidentialitePage() {
           </p>
           <ul className="card-list">
             <li>
-              <strong>Resend</strong> — envoi des courriels liés à ta demande de contact
+              <strong>Brevo</strong> — envoi des courriels liés à ta demande de contact
               (confirmation et réponse).
             </li>
             <li>
@@ -183,11 +183,8 @@ export default function ConfidentialitePage() {
 
           <h2 className="mt-12">Transferts hors UE</h2>
           <p className="mt-4 leading-relaxed">
-            Le service d&apos;envoi de courriels <strong>Resend</strong> est situé aux États-Unis.
-            Les transferts sont encadrés par les <strong>clauses contractuelles types</strong> de la
-            Commission européenne et par les engagements de conformité au{" "}
-            <strong>Data Privacy Framework</strong> (EU-US DPF) lorsque le prestataire y est
-            certifié.
+            <strong>Brevo</strong> est une société française, et le site est hébergé sur un serveur
+            situé en France. Aucune donnée n&apos;est transférée hors de l&apos;Union européenne.
           </p>
 
           <h2 className="mt-12">Sécurité</h2>
