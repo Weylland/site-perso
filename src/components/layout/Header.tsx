@@ -36,15 +36,9 @@ export default function Header() {
           </Link>
           <Link
             href="/contact"
-            className="group inline-flex items-center gap-2 px-4 py-[0.6rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-[0.9rem] transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-sunshine-2 cursor-pointer"
+            className="inline-flex items-center px-4 py-[0.6rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-[0.9rem] transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-sunshine-2 cursor-pointer"
           >
             Discuter d&apos;un projet
-            <span
-              aria-hidden
-              className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:-rotate-12"
-            >
-              →
-            </span>
           </Link>
 
           <MobileMenu />

@@ -9,21 +9,9 @@ function SubmitButton() {
     <button
       type="submit"
       disabled={pending}
-      className="group w-full inline-flex items-center justify-center gap-2 px-8 py-[1.1rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none disabled:opacity-60 disabled:cursor-not-allowed"
+      className="w-full inline-flex items-center justify-center px-8 py-[1.1rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none disabled:opacity-60 disabled:cursor-not-allowed"
     >
-      {pending ? (
-        "Envoi en cours…"
-      ) : (
-        <>
-          Envoyer ma demande
-          <span
-            aria-hidden
-            className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:-rotate-12"
-          >
-            →
-          </span>
-        </>
-      )}
+      {pending ? "Envoi en cours…" : "Envoyer ma demande"}
     </button>
   );
 }

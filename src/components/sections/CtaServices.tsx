@@ -28,15 +28,9 @@ export function CtaServices() {
         </p>
         <Link
           href="/contact"
-          className="group inline-flex items-center gap-2 font-semibold border-[2.5px] border-ink bg-sunshine text-ink shadow-brutal transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none px-8 py-[1.15rem] text-[1.05rem]"
+          className="inline-flex items-center font-semibold border-[2.5px] border-ink bg-sunshine text-ink shadow-brutal transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none px-8 py-[1.15rem] text-[1.05rem]"
         >
           Discuter d&apos;un projet
-          <span
-            aria-hidden
-            className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:-rotate-12"
-          >
-            →
-          </span>
         </Link>
         <p className="note-small" style={{ color: "var(--color-cream)", opacity: 0.65 }}>
           Devis sous 48&nbsp;h · Aucun engagement

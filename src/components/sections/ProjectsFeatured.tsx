@@ -31,15 +31,9 @@ export function ProjectsFeatured() {
         <p className="text-center mt-12">
           <Link
             href="/realisations"
-            className="group inline-flex items-center gap-2 font-display font-semibold border-[2.5px] border-ink shadow-brutal bg-cream text-ink transition-[transform,box-shadow] duration-[220ms] ease-out hover:[transform:translate(4px,4px)] hover:[box-shadow:0_0_0_var(--color-ink)] px-6 py-[0.9rem] text-base"
+            className="inline-flex items-center font-display font-semibold border-[2.5px] border-ink shadow-brutal bg-cream text-ink transition-[transform,box-shadow] duration-[220ms] ease-out hover:[transform:translate(4px,4px)] hover:[box-shadow:0_0_0_var(--color-ink)] px-6 py-[0.9rem] text-base"
           >
-            Toutes les réalisations{" "}
-            <span
-              aria-hidden="true"
-              className="inline-block transition-transform duration-[180ms] ease-out group-hover:[transform:translateX(4px)_rotate(-12deg)]"
-            >
-              →
-            </span>
+            Toutes les réalisations
           </Link>
         </p>
       </div>

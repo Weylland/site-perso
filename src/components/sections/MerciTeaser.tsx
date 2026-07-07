@@ -34,15 +34,9 @@ export function MerciTeaser() {
             <div className="flex gap-4 flex-wrap mt-8">
               <Link
                 href="/a-propos"
-                className="group inline-flex items-center gap-2 px-6 py-[0.9rem] bg-ink text-cream border-[2.5px] border-ink shadow-brutal font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+                className="inline-flex items-center px-6 py-[0.9rem] bg-ink text-cream border-[2.5px] border-ink shadow-brutal font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
               >
                 Voir mon parcours
-                <span
-                  aria-hidden
-                  className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:-rotate-12"
-                >
-                  →
-                </span>
               </Link>
               <Link
                 href="/"

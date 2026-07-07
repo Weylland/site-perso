@@ -29,15 +29,9 @@ export function Hero() {
           <div className="flex gap-4 flex-wrap animate-[fade-in-up_0.8s_ease-out_0.42s_backwards]">
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 px-6 py-[0.9rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-sunshine-2 cursor-pointer animate-[subtle-pulse_2.8s_ease-in-out_infinite] hover:animate-none"
+              className="inline-flex items-center px-6 py-[0.9rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-base transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-sunshine-2 cursor-pointer animate-[subtle-pulse_2.8s_ease-in-out_infinite] hover:animate-none"
             >
               Discuter d&apos;un projet
-              <span
-                aria-hidden
-                className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:-rotate-12"
-              >
-                →
-              </span>
             </Link>
 
             <Link
