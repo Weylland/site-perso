@@ -66,10 +66,10 @@ export const projects: Project[] = [
     name: "Ce site",
     tagline: "Portfolio & présentation en néo-brutalisme soft",
     description:
-      "Le site que vous consultez : portfolio, présentation et point de contact. Design néo-brutalisme soft pastel, entièrement statique et accessible.",
+      "Le site que vous consultez : portfolio, présentation et point de contact. Design néo-brutalisme soft pastel, auto-hébergé et accessible.",
     category: "Projet perso",
     year: "2026",
-    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind v4"],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "Coolify"],
     sticker: "/stickers/ns-big.svg",
     image: "/realisations/site-perso.jpg",
     accent: "peach",
