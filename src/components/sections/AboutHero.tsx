@@ -26,7 +26,8 @@ export function AboutHero() {
           <p className="text-[1.2rem] max-w-[50ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
             Développeur web fullstack. Sites, applications, automatisations et IA, du premier
             échange à la mise en ligne. Un goût net pour le travail propre et les livrables qui font
-            le job sans bruit. Basé en Hauts-de-France — sur place ou à distance partout en France.
+            le job, sans fioritures. Basé en Hauts-de-France — sur place ou à distance partout en
+            France.
           </p>
 
           <div className="flex gap-4 flex-wrap animate-[fade-in-up_0.8s_ease-out_0.42s_backwards]">
