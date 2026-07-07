@@ -45,8 +45,8 @@ export default function RealisationsPage() {
       >
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid grid-cols-1 min-[900px]:grid-cols-2 gap-[1.75rem]">
-            {projects.map((project) => (
-              <ProjectCard key={project.slug} project={project} detailed />
+            {projects.map((project, index) => (
+              <ProjectCard key={project.slug} project={project} detailed index={index} />
             ))}
           </div>
 

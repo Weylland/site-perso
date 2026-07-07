@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal } from "@/components/ui/Reveal";
 
 export function Services() {
   return (
@@ -19,70 +20,77 @@ export function Services() {
         </div>
 
         <div className="card-grid">
-          <Link href="/services#site-vitrine" className="card card-numbered card-sunshine">
-            <span className="card-number">01</span>
-            <Image
-              src="/stickers/globe.svg"
-              alt=""
-              width={72}
-              height={72}
-              className="sticker-card"
-              aria-hidden="true"
-            />
-            <h3>
-              Sites vitrine
-              <br />& landing pages
-            </h3>
-            <p>
-              3 à 5 pages adaptées à tous les écrans, hébergement configuré, bien référencé sur
-              Google, formulaire de contact anti-spam. La technologie est choisie selon ton besoin.
-            </p>
-            <span className="link-cta mt-6">Voir les formules</span>
-          </Link>
+          <Reveal delay={0}>
+            <Link href="/services#site-vitrine" className="card card-numbered card-sunshine">
+              <span className="card-number">01</span>
+              <Image
+                src="/stickers/globe.svg"
+                alt=""
+                width={72}
+                height={72}
+                className="sticker-card"
+                aria-hidden="true"
+              />
+              <h3>
+                Sites vitrine
+                <br />& landing pages
+              </h3>
+              <p>
+                3 à 5 pages adaptées à tous les écrans, hébergement configuré, bien référencé sur
+                Google, formulaire de contact anti-spam. La technologie est choisie selon ton
+                besoin.
+              </p>
+              <span className="link-cta mt-6">Voir les formules</span>
+            </Link>
+          </Reveal>
 
-          <Link href="/services#application-web" className="card card-numbered card-mint">
-            <span className="card-number">02</span>
-            <Image
-              src="/stickers/bolt.svg"
-              alt=""
-              width={72}
-              height={72}
-              className="sticker-card"
-              aria-hidden="true"
-            />
-            <h3>
-              Applications
-              <br />
-              web sur mesure
-            </h3>
-            <p>
-              MVP, outils internes, SaaS simples. Cycle complet&nbsp;: cadrage, design UX, dev
-              fullstack TypeScript, déploiement et mise en ligne.
-            </p>
-            <span className="link-cta mt-6">Voir les formules</span>
-          </Link>
+          <Reveal delay={80}>
+            <Link href="/services#application-web" className="card card-numbered card-mint">
+              <span className="card-number">02</span>
+              <Image
+                src="/stickers/bolt.svg"
+                alt=""
+                width={72}
+                height={72}
+                className="sticker-card"
+                aria-hidden="true"
+              />
+              <h3>
+                Applications
+                <br />
+                web sur mesure
+              </h3>
+              <p>
+                MVP, outils internes, SaaS simples. Cycle complet&nbsp;: cadrage, design UX, dev
+                fullstack TypeScript, déploiement et mise en ligne.
+              </p>
+              <span className="link-cta mt-6">Voir les formules</span>
+            </Link>
+          </Reveal>
 
-          <Link href="/services#automatisation-n8n" className="card card-numbered card-sky">
-            <span className="card-number">03</span>
-            <Image
-              src="/stickers/gears.svg"
-              alt=""
-              width={72}
-              height={72}
-              className="sticker-card"
-              aria-hidden="true"
-            />
-            <h3>
-              Automatisation
-              <br />& IA sur mesure
-            </h3>
-            <p>
-              Automatiser tes tâches répétitives (facturation, relances, notifications) et brancher
-              de l&apos;IA utile&nbsp;: un assistant connecté à tes documents, de la rédaction
-              automatique. Mode d&apos;emploi fourni.
-            </p>
-            <span className="link-cta mt-6">Voir les formules</span>
-          </Link>
+          <Reveal delay={160}>
+            <Link href="/services#automatisation-n8n" className="card card-numbered card-sky">
+              <span className="card-number">03</span>
+              <Image
+                src="/stickers/gears.svg"
+                alt=""
+                width={72}
+                height={72}
+                className="sticker-card"
+                aria-hidden="true"
+              />
+              <h3>
+                Automatisation
+                <br />& IA sur mesure
+              </h3>
+              <p>
+                Automatiser tes tâches répétitives (facturation, relances, notifications) et
+                brancher de l&apos;IA utile&nbsp;: un assistant connecté à tes documents, de la
+                rédaction automatique. Mode d&apos;emploi fourni.
+              </p>
+              <span className="link-cta mt-6">Voir les formules</span>
+            </Link>
+          </Reveal>
         </div>
 
         <p className="text-center mt-12">

@@ -23,8 +23,8 @@ export function ProjectsFeatured() {
         </div>
 
         <div className="card-grid">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+          {featuredProjects.map((project, index) => (
+            <ProjectCard key={project.slug} project={project} index={index} />
           ))}
         </div>
 
