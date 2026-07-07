@@ -18,7 +18,7 @@ export default function ConfidentialitePage() {
       >
         <div className="max-w-7xl mx-auto px-8 py-24 text-center">
           <span className="eyebrow">RGPD · Données personnelles</span>
-          <h1 className="mt-6">
+          <h1 className="mt-6 [overflow-wrap:break-word]">
             Politique de <span className="highlight-sunshine">confidentialité</span>.
           </h1>
           <p className="mt-6 text-[1.15rem] opacity-80 max-w-[52ch] mx-auto leading-relaxed">
