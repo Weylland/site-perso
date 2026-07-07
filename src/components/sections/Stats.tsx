@@ -14,7 +14,7 @@ export function Stats() {
             <span className="stat-label">Technos maîtrisées</span>
           </div>
           <div className="stat">
-            <StatNumber target={4} />
+            <StatNumber target={4} suffix="+" />
             <span className="stat-label">Projets en ligne</span>
           </div>
           <div className="stat">

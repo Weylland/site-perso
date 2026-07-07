@@ -46,7 +46,7 @@ export function StatNumber({ target, prefix, suffix }: Props) {
     <span className="stat-num" ref={ref}>
       {prefix && <span className="stat-unit">{prefix}</span>}
       {value}
-      {suffix && <span className="stat-unit"> {suffix}</span>}
+      {suffix && <span className="stat-unit">{suffix}</span>}
     </span>
   );
 }
