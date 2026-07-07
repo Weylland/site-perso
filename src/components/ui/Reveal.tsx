@@ -50,8 +50,8 @@ export function Reveal({ children, delay = 0, id }: Props) {
     <div
       ref={ref}
       id={id}
-      className={`h-full [&>*]:h-full transition-[opacity,transform] duration-[800ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] ${
-        shown ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+      className={`h-full [&>*]:h-full transition-opacity duration-[700ms] ease-out ${
+        shown ? "opacity-100" : "opacity-0"
       }`}
       style={{ transitionDelay: shown ? `${delay}ms` : "0ms" }}
     >
