@@ -609,6 +609,7 @@
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    user-select: none;
   }
 
   & summary::-webkit-details-marker {

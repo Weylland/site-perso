@@ -8,7 +8,7 @@ it("renders the process region", () => {
 
 it("renders all four step headings", () => {
   render(<Process />);
-  expect(screen.getByRole("heading", { name: /brief/i })).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: /premier contact/i })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: /devis/i })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: /développement/i })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: /livraison/i })).toBeInTheDocument();

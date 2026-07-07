@@ -24,18 +24,18 @@ export function Process({ subtitle = <em>Zéro surprise.</em> }: ProcessProps) {
         <div className="steps">
           <div className="step">
             <div className="step-num">01</div>
-            <h3>Brief</h3>
+            <h3>Premier contact</h3>
             <p>
-              Un appel de 30 min pour comprendre ton contexte, tes contraintes et tes priorités. Je
-              pose des questions, tu réponds, on repart avec un cadrage clair.
+              Tu m&apos;écris, je réponds sous 48&nbsp;h ouvrées. Si le projet est clair, on cale un
+              appel de 30 min pour cadrer contexte, contraintes et priorités.
             </p>
           </div>
           <div className="step">
             <div className="step-num">02</div>
             <h3>Devis</h3>
             <p>
-              Sous 48&nbsp;h, un devis détaillé&nbsp;: livrables, délai, prix fixe. Pas de forfait
-              qui gonfle, pas de surprise en fin de mois.
+              Sous 48&nbsp;h après l&apos;appel, un devis détaillé&nbsp;: livrables, délai, prix
+              fixe. Pas de forfait qui gonfle, pas de surprise en fin de mois.
             </p>
           </div>
           <div className="step">
