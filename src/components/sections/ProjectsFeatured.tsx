@@ -17,7 +17,7 @@ export function ProjectsFeatured() {
             <em>en ligne</em>.
           </h2>
           <p className="mt-5 max-w-[58ch] mx-auto text-[1.1rem] opacity-80">
-            Des projets que je conçois et fais tourner moi-même — pipelines IA, temps réel
+            Des projets que je conçois et fais tourner moi-même&nbsp;: pipelines IA, temps réel
             multijoueur, sites clients. Le code et les choix techniques sont à moi.
           </p>
         </div>

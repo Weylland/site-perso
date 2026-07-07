@@ -1,7 +1,7 @@
 const items = [
   {
     q: "Tu fais quoi, concrètement ?",
-    a: "Des sites vitrine, des applications web sur mesure, de l'automatisation et de l'intelligence artificielle. Je prends le projet du début — comprendre ton besoin — jusqu'à la mise en ligne.",
+    a: "Des sites vitrine, des applications web sur mesure, de l'automatisation et de l'intelligence artificielle. Je prends le projet du début (comprendre ton besoin) jusqu'à la mise en ligne.",
   },
   {
     q: "Tu fais vraiment de l'IA, ou c'est juste un mot à la mode ?",
@@ -9,7 +9,7 @@ const items = [
   },
   {
     q: "Tu travailles avec quelles technologies ?",
-    a: "Celle qui colle le mieux à ton besoin — je ne t'enferme pas dans un outil. WordPress si tu veux gérer ton contenu toi-même, du développement sur mesure si tu as besoin de rapidité ou de fonctions particulières. On choisit ensemble, selon ton projet et ton budget — pas selon mes habitudes.",
+    a: "Celle qui colle le mieux à ton besoin. Je ne t'enferme pas dans un outil : WordPress si tu veux gérer ton contenu toi-même, du développement sur mesure si tu as besoin de rapidité ou de fonctions particulières. On choisit ensemble, selon ton projet et ton budget, pas selon mes habitudes.",
   },
   {
     q: "Tu peux reprendre un site existant ?",
@@ -25,7 +25,7 @@ const items = [
   },
   {
     q: "Est-ce que tu fais aussi le design ?",
-    a: "Sur les sites et les applications, oui — je conçois et je code le design. Pour les gros projets, je travaille volontiers avec un graphiste déjà en place. Si tu as déjà une maquette, parfait.",
+    a: "Sur les sites et les applications, oui : je conçois et je code le design. Pour les gros projets, je travaille volontiers avec un graphiste déjà en place. Si tu as déjà une maquette, parfait.",
   },
   {
     q: "Comment se passe le paiement ?",

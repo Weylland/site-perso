@@ -21,7 +21,7 @@ export function MerciHero() {
 
           <p className="text-[1.2rem] max-w-[52ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
             Je te réponds sous 48 h ouvrées, du lundi au vendredi. Un courriel de confirmation vient
-            de partir à l&apos;adresse indiquée — pense à vérifier les spams si rien n&apos;arrive
+            de partir à l&apos;adresse indiquée. Pense à vérifier les spams si rien n&apos;arrive
             dans les 5 minutes.
           </p>
 

@@ -23,7 +23,7 @@ export function CtaFinal() {
           }}
         >
           Pas besoin d&apos;avoir un cahier des charges blindé. Un mail, un appel, et on défriche
-          ensemble. Retour sous 48 h ouvrées — garanti.
+          ensemble. Retour sous 48 h ouvrées, garanti.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <a

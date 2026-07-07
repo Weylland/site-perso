@@ -27,8 +27,8 @@ export function MerciTeaser() {
               Occupe tes <em>20 minutes</em>.
             </h2>
             <p className="mt-6 text-[1.1rem] max-w-[48ch] leading-[1.55]">
-              Jette un œil à mon parcours et à mes projets perso — <strong>watch·ia</strong>, un
-              média de veille IA à pipeline LLM automatisé, et <strong>RivalRush</strong>, une
+              Jette un œil à mon parcours et à mes projets perso&nbsp;: <strong>watch·ia</strong>,
+              un média de veille IA à pipeline LLM automatisé, et <strong>RivalRush</strong>, une
               plateforme de mini-jeux multijoueur en temps réel.
             </p>
             <div className="flex gap-4 flex-wrap mt-8">

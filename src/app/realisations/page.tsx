@@ -53,7 +53,7 @@ export default function RealisationsPage() {
           <div className="mt-12 bg-cream border-[2.5px] border-ink shadow-brutal max-w-[760px] mx-auto p-8 text-center">
             <h2 className="text-[1.5rem]">Un projet en tête&nbsp;?</h2>
             <p className="mt-4 max-w-[52ch] mx-auto opacity-80">
-              Que ce soit un site, une app, une automatisation ou un pipeline IA — décris-moi
+              Que ce soit un site, une app, une automatisation ou un pipeline IA, décris-moi
               l&apos;idée, je te dis franchement si et comment je peux la concrétiser.
             </p>
             <p className="mt-6">

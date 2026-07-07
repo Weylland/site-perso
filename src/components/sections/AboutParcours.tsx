@@ -2,7 +2,7 @@ const entries = [
   {
     date: "2026 — aujourd'hui",
     title: "Freelance fullstack & IA",
-    body: "Sites, applications web, automatisations et intégrations IA, sur place ou à distance. Conception et développement de bout en bout — du cadrage à la mise en ligne. C'est aussi la période où je construis mes projets perso : watch·ia et RivalRush.",
+    body: "Sites, applications web, automatisations et intégrations IA, sur place ou à distance. Conception et développement de bout en bout, du cadrage à la mise en ligne. C'est aussi la période où je construis mes projets perso : watch·ia et RivalRush.",
   },
   {
     date: "2024 — 2026",

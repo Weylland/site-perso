@@ -22,8 +22,8 @@ export function ContactHero() {
           </h1>
 
           <p className="text-[1.2rem] max-w-[52ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
-            Site, application web, automatisation n8n, mission freelance ou poste en CDI — dis-moi
-            ce dont tu as besoin. Je lis, je reformule, je te réponds.
+            Site, application web, automatisation n8n, mission freelance ou poste en CDI. Dis-moi ce
+            dont tu as besoin. Je lis, je reformule, je te réponds.
           </p>
 
           <div className="flex flex-wrap gap-8 items-center mt-10 pt-8 border-t-[1.5px] border-dashed border-ink font-display text-[0.9rem] animate-[fade-in-up_0.8s_ease-out_0.55s_backwards]">

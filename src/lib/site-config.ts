@@ -5,7 +5,7 @@ export const siteConfig = {
   url: "https://nicolas-samier.fr",
   title: "Nicolas Samier — Développeur fullstack (CDI & freelance)",
   description:
-    "Développeur web fullstack, Hauts-de-France — sur place ou à distance. Sites et applications web (Next.js, Node), infrastructure AWS, automatisation et IA. Disponible en CDI comme en freelance.",
+    "Développeur web fullstack, Hauts-de-France, sur place ou à distance. Sites et applications web (Next.js, Node), infrastructure AWS, automatisation et IA. Disponible en CDI comme en freelance.",
   locale: "fr_FR",
   email: "samiernicolas62@gmail.com",
 } as const;

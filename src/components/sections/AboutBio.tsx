@@ -13,7 +13,7 @@ export function AboutBio() {
 
         <p style={{ fontSize: "1.2rem" }}>
           Je suis développeur web fullstack. Je conçois et développe des sites, des applications web
-          sur mesure, des automatisations et des intégrations IA — pour des entrepreneurs, des TPE,
+          sur mesure, des automatisations et des intégrations IA, pour des entrepreneurs, des TPE,
           des associations et d&apos;autres freelances qui veulent déléguer leur tech.
         </p>
         <p style={{ fontSize: "1.15rem" }}>
@@ -21,7 +21,7 @@ export function AboutBio() {
           performants, Node.js et PHP côté serveur, WordPress / WooCommerce pour l&apos;éditorial,
           et je m&apos;appuie sur AWS (API Gateway, Lambda, S3, DynamoDB) pour
           l&apos;infrastructure. Pour l&apos;automatisation et l&apos;IA, j&apos;assemble des
-          pipelines avec n8n, les API Claude et Mistral, du RAG et des serveurs MCP — c&apos;est
+          pipelines avec n8n, les API Claude et Mistral, du RAG et des serveurs MCP. C&apos;est
           exactement ce qui fait tourner mon média de veille watch·ia.
         </p>
         <p style={{ fontSize: "1.15rem" }}>

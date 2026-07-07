@@ -31,7 +31,7 @@ export default function Footer() {
             </span>
           </Link>
           <p className="mt-5 text-[0.95rem] opacity-80 max-w-[32ch]">
-            Développeur web, basé en Hauts-de-France — sur place ou à distance partout en France.
+            Développeur web, basé en Hauts-de-France, sur place ou à distance partout en France.
             Disponible en CDI comme en freelance.
           </p>
           <div className="mt-5 flex gap-2">

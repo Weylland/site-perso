@@ -22,7 +22,7 @@ export function Hero() {
 
           <p className="text-[1.2rem] max-w-[50ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
             Nicolas Samier, développeur web. Je conçois des sites, des applications, des
-            automatisations et de l&apos;IA — du premier échange à la mise en ligne. Disponible en
+            automatisations et de l&apos;IA, du premier échange à la mise en ligne. Disponible en
             CDI comme en freelance, dans les Hauts-de-France et à distance.
           </p>
 

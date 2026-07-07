@@ -17,7 +17,7 @@ const hobbies = [
     src: "/stickers/gamepad.png",
     label: "Jeux vidéo",
     color: "card-sky",
-    body: "Des heures sur des jeux que je ne finis jamais — et une pile qui ne cesse de grandir.",
+    body: "Des heures sur des jeux que je ne finis jamais, et une pile qui ne cesse de grandir.",
   },
 ];
 
