@@ -165,21 +165,11 @@
   }
 }
 
-@keyframes pulse-dot {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-}
-
 @utility eyebrow {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.9rem;
+  padding: 0.4rem 0.9rem 0.4rem 1.6rem;
   background: var(--color-cream);
   border: 2.5px solid var(--color-ink);
   box-shadow: var(--shadow-brutal-sm);
@@ -190,12 +180,26 @@
 
   &::before {
     content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
+    position: absolute;
+    left: 0.6rem;
+    top: 50%;
+    width: 7px;
+    height: 7px;
     background: var(--color-mint);
-    box-shadow: 0 0 0 3px rgba(127, 217, 184, 0.35);
-    animation: pulse-dot 1.6s ease-in-out infinite;
+    border: 1.5px solid var(--color-ink);
+    transform: translateY(-60%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.88rem;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    background: var(--color-sunshine);
+    border: 1.5px solid var(--color-ink);
+    transform: translateY(-40%);
   }
 }
 
