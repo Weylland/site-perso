@@ -244,7 +244,7 @@ export default function ConfidentialitePage() {
             ).
           </p>
 
-          <p className="note-small mt-12">Dernière mise à jour : 4 mai 2026.</p>
+          <p className="note-small mt-12">Dernière mise à jour : 7 juillet 2026.</p>
         </div>
       </section>
 

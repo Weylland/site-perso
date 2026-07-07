@@ -33,13 +33,13 @@ export default function MentionsLegalesPage() {
           <p className="mt-4 leading-relaxed">
             Site édité par <strong>Nicolas Samier</strong>, entrepreneur individuel (EI).
             <br />
-            Adresse du siège : <em>Hauts-de-France, France</em>.<br />
-            SIRET : 000 000 000 00000.
+            Adresse du siège : <em>601 bis rue Gambetta, 59184 Sainghin-en-Weppes, France</em>.
             <br />
-            Numéro de TVA intracommunautaire : FR00 000000000 (franchise en base, TVA non
-            applicable, article 293 B du CGI).
+            SIRET : 938 186 384 00013.
             <br />
-            Activité : services informatiques, développement web, vente de produits numériques.
+            TVA non applicable, article 293 B du CGI (franchise en base de TVA).
+            <br />
+            Activité : services informatiques, développement web.
           </p>
 
           <h2 className="mt-12">Directeur de la publication</h2>
@@ -56,11 +56,9 @@ export default function MentionsLegalesPage() {
 
           <h2 className="mt-12">Hébergement</h2>
           <p className="mt-4 leading-relaxed">
-            Le site est hébergé sur un serveur dédié (VPS).{" "}
-            <strong>
-              [Hébergeur à compléter avant la mise en ligne : raison sociale, adresse complète et
-              téléphone.]
-            </strong>
+            Le site est hébergé sur un serveur dédié (VPS) par <strong>OVH SAS</strong>, 2 rue
+            Kellermann, 59100 Roubaix, France. RCS Lille Métropole 424 761 419. Téléphone : 09 55 00
+            66 33.
           </p>
 
           <h2 className="mt-12">Propriété intellectuelle</h2>
@@ -116,7 +114,7 @@ export default function MentionsLegalesPage() {
             . Réponse sous 48 h ouvrées.
           </p>
 
-          <p className="note-small mt-12">Dernière mise à jour : 4 mai 2026.</p>
+          <p className="note-small mt-12">Dernière mise à jour : 7 juillet 2026.</p>
         </div>
       </section>
 
