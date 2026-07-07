@@ -36,7 +36,7 @@ export default function Header() {
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center px-4 py-[0.6rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-[0.9rem] transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-sunshine-2 cursor-pointer"
+            className="hidden min-[370px]:inline-flex items-center px-4 py-[0.6rem] bg-sunshine border-[2.5px] border-ink shadow-brutal font-sans font-semibold text-[0.9rem] transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-sunshine-2 cursor-pointer"
           >
             Discuter d&apos;un projet
           </Link>
