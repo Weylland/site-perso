@@ -58,7 +58,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative min-h-[460px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
+        <div className="relative min-h-[280px] min-[900px]:min-h-[460px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
             src="/stickers/laptop.png"
             alt=""

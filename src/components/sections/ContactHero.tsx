@@ -47,7 +47,7 @@ export function ContactHero() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center min-h-[420px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
+        <div className="flex justify-center items-center min-h-[220px] min-[900px]:min-h-[420px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
             src="/stickers/envelope.svg"
             alt=""

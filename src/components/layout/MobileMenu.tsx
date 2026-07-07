@@ -73,7 +73,7 @@ export function MobileMenu() {
             id="mobile-nav"
             aria-label="Navigation mobile"
             inert={!open}
-            className={`fixed inset-0 z-[100] overflow-hidden bg-ink border-l-[4px] border-cream flex flex-col transition-transform duration-300 ease-out ${open ? "translate-x-0" : "translate-x-full"}`}
+            className={`fixed inset-0 z-[100] overflow-hidden bg-ink flex flex-col transition-transform duration-300 ease-out ${open ? "translate-x-0" : "translate-x-full"}`}
           >
             <span
               aria-hidden

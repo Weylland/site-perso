@@ -49,7 +49,7 @@ export function ServicesHero() {
           </div>
         </div>
 
-        <div className="relative min-h-[360px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
+        <div className="relative min-h-[220px] min-[900px]:min-h-[360px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
             src="/stickers/bolt.svg"
             alt=""

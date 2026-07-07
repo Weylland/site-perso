@@ -53,7 +53,7 @@ export function AboutHero() {
           </div>
         </div>
 
-        <div className="relative min-h-[420px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
+        <div className="relative min-h-[260px] min-[900px]:min-h-[420px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
             src="/stickers/ns-big.svg"
             alt=""
