@@ -37,7 +37,7 @@ export function Reveal({ children, delay = 0, id }: Props) {
           obs.unobserve(el);
         });
       },
-      { threshold: 0.2 },
+      { threshold: 0.1, rootMargin: "0px 0px -10% 0px" },
     );
 
     obs.observe(el);
@@ -50,8 +50,8 @@ export function Reveal({ children, delay = 0, id }: Props) {
     <div
       ref={ref}
       id={id}
-      className={`h-full [&>*]:h-full transition-[opacity,transform] duration-[600ms] ease-out ${
-        shown ? "opacity-100 translate-y-0" : "opacity-0 translate-y-7"
+      className={`h-full [&>*]:h-full transition-[opacity,transform] duration-[800ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] ${
+        shown ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
       style={{ transitionDelay: shown ? `${delay}ms` : "0ms" }}
     >
