@@ -29,7 +29,7 @@ function SubmitButton() {
 }
 
 export function ContactForm() {
-  const [, formAction] = useActionState(sendContactForm, null);
+  const [state, formAction] = useActionState(sendContactForm, null);
 
   return (
     <section aria-label="Formulaire de contact" className="bg-peach border-b-[2.5px] border-ink">
@@ -160,6 +160,16 @@ export function ContactForm() {
                 .
               </label>
             </div>
+
+            {state?.error && (
+              <p
+                role="alert"
+                className="text-center font-semibold"
+                style={{ marginTop: "1rem", color: "var(--color-ink)" }}
+              >
+                {state.error}
+              </p>
+            )}
 
             <SubmitButton />
 
