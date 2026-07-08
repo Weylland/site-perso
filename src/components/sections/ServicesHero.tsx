@@ -18,7 +18,10 @@ export function ServicesHero() {
 
           <h1 className="mt-2 mb-7 animate-[fade-in-up_0.8s_ease-out_0.15s_backwards]">
             <Highlight color="mint">Sites</Highlight>, <em>apps</em>
-            <br />& <Highlight color="peach">automatisations</Highlight>.
+            <br />
+            <span className="min-[380px]:whitespace-nowrap">
+              & <Highlight color="peach">automatisations</Highlight>.
+            </span>
           </h1>
 
           <p className="text-[1.2rem] max-w-[50ch] mb-9 leading-[1.55] animate-[fade-in-up_0.8s_ease-out_0.3s_backwards]">
