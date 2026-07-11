@@ -76,7 +76,7 @@ export function Hero() {
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
-            src="/stickers/gears.svg"
+            src="/stickers/gears.png"
             alt=""
             width={200}
             height={200}

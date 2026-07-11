@@ -73,7 +73,7 @@ export function AboutHero() {
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
-            src="/stickers/headphones.svg"
+            src="/stickers/headphones.png"
             alt=""
             width={120}
             height={120}

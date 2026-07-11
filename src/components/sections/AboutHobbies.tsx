@@ -8,7 +8,7 @@ const hobbies = [
     body: "Surtout de l'acoustique. Un bon moyen de décrocher de l'écran et de faire autre chose de mes mains.",
   },
   {
-    src: "/stickers/headphones.svg",
+    src: "/stickers/headphones.png",
     label: "Musique",
     color: "card-peach",
     body: "Toujours un casque sur les oreilles quand je code. Un peu de tout, selon l'humeur du moment.",

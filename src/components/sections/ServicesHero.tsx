@@ -68,7 +68,7 @@ export function ServicesHero() {
             }}
           />
           <Image
-            src="/stickers/gears.svg"
+            src="/stickers/gears.png"
             alt=""
             width={200}
             height={200}

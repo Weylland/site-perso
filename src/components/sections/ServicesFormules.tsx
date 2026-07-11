@@ -132,7 +132,7 @@ export function ServicesFormules() {
             <div className="card card-numbered card-sky">
               <span className="card-number">04</span>
               <Image
-                src="/stickers/gears.svg"
+                src="/stickers/gears.png"
                 alt=""
                 width={72}
                 height={72}
