@@ -82,7 +82,7 @@ export function AboutHero() {
             style={{ filter: "drop-shadow(6px 6px 0 var(--color-ink))" }}
           />
           <Image
-            src="/stickers/star.svg"
+            src="/stickers/star.png"
             alt=""
             width={80}
             height={80}

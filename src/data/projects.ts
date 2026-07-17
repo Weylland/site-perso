@@ -26,7 +26,7 @@ export const projects: Project[] = [
     year: "2025 — aujourd'hui",
     url: "https://watch-ia.com",
     tech: ["Next.js", "TypeScript", "Node.js", "SQLite", "Mistral API", "Claude MCP", "Railway"],
-    sticker: "/stickers/eye.svg",
+    sticker: "/stickers/eye.png",
     image: "/realisations/watch-ia.jpg",
     accent: "sunshine",
     featured: true,

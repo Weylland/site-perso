@@ -10,7 +10,7 @@ const baseProject: Project = {
   category: "Projet perso",
   year: "2026",
   tech: ["Next.js", "TypeScript"],
-  sticker: "/stickers/eye.svg",
+  sticker: "/stickers/eye.png",
   accent: "sunshine",
 };
 
