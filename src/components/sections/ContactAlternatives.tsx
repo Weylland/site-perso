@@ -20,7 +20,7 @@ export function ContactAlternatives() {
         <div className="card-grid">
           <a href="mailto:samiernicolas62@gmail.com" className="card card-sunshine text-center">
             <Image
-              src="/stickers/envelope.svg"
+              src="/stickers/envelope.png"
               alt=""
               width={72}
               height={72}

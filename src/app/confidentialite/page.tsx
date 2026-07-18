@@ -41,7 +41,7 @@ export default function ConfidentialitePage() {
           <div className="grid-3" style={{ maxWidth: "820px", margin: "0 auto" }}>
             <div className="card text-center">
               <Image
-                src="/stickers/envelope.svg"
+                src="/stickers/envelope.png"
                 alt=""
                 width={72}
                 height={72}

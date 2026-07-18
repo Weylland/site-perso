@@ -43,7 +43,7 @@ export function MerciHero() {
 
         <div className="flex justify-center items-center animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
-            src="/stickers/envelope.svg"
+            src="/stickers/envelope.png"
             alt=""
             width={260}
             height={260}

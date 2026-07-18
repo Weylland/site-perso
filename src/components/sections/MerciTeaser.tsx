@@ -8,7 +8,7 @@ export function MerciTeaser() {
         <div className="split">
           <div className="flex justify-center items-center">
             <Image
-              src="/stickers/rocket.svg"
+              src="/stickers/rocket.png"
               alt=""
               aria-hidden
               width={400}
