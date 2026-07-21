@@ -48,7 +48,7 @@ export function Services() {
             <Link href="/services#application-web" className="card card-numbered card-mint">
               <span className="card-number">02</span>
               <Image
-                src="/stickers/bolt.svg"
+                src="/stickers/bolt.png"
                 alt=""
                 width={72}
                 height={72}

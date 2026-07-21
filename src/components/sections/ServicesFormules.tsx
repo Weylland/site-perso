@@ -96,7 +96,7 @@ export function ServicesFormules() {
             <div className="card card-numbered card-mint">
               <span className="card-number">03</span>
               <Image
-                src="/stickers/bolt.svg"
+                src="/stickers/bolt.png"
                 alt=""
                 width={72}
                 height={72}

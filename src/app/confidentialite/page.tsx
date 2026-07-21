@@ -56,7 +56,7 @@ export default function ConfidentialitePage() {
             </div>
             <div className="card text-center">
               <Image
-                src="/stickers/bug.svg"
+                src="/stickers/bug.png"
                 alt=""
                 width={72}
                 height={72}
@@ -71,7 +71,7 @@ export default function ConfidentialitePage() {
             </div>
             <div className="card text-center">
               <Image
-                src="/stickers/document.svg"
+                src="/stickers/document.png"
                 alt=""
                 width={72}
                 height={72}

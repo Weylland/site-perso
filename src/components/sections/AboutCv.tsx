@@ -9,7 +9,7 @@ export function AboutCv() {
     >
       <div className="max-w-7xl mx-auto px-8">
         <Image
-          src="/stickers/document.svg"
+          src="/stickers/document.png"
           alt=""
           width={120}
           height={120}

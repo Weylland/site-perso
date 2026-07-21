@@ -53,7 +53,7 @@ export function ContactAlternatives() {
 
           <a href="/a-propos#cv" className="card card-mint text-center">
             <Image
-              src="/stickers/document.svg"
+              src="/stickers/document.png"
               alt=""
               width={72}
               height={72}

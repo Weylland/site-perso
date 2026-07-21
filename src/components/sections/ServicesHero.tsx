@@ -54,7 +54,7 @@ export function ServicesHero() {
 
         <div className="relative aspect-[310/240] min-[900px]:aspect-auto min-[900px]:min-h-[360px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
-            src="/stickers/bolt.svg"
+            src="/stickers/bolt.png"
             alt=""
             width={200}
             height={200}
