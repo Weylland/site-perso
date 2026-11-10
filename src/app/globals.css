@@ -399,6 +399,14 @@
   white-space: nowrap;
 }
 
+@utility brand-logo {
+  @apply inline-flex size-11 shrink-0 items-center justify-center border-[2.5px] border-ink bg-peach shadow-brutal transition-[transform,box-shadow,background-color] duration-150 ease-out;
+
+  .group:hover & {
+    @apply translate-x-1 translate-y-1 -rotate-4 bg-sunshine shadow-none;
+  }
+}
+
 @utility section-dots {
   background-image: radial-gradient(rgba(10, 10, 10, 0.18) 1.2px, transparent 1.2px);
   background-size: 28px 28px;

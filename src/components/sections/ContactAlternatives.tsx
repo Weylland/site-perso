@@ -39,7 +39,7 @@ export function ContactAlternatives() {
             target="_blank"
           >
             <Image
-              src="/stickers/linkedin.svg"
+              src="/stickers/linkedin.png"
               alt=""
               width={72}
               height={72}

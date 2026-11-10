@@ -7,7 +7,7 @@ export function AboutTeaser() {
         <div className="split split-reverse">
           <div>
             <Image
-              src="/stickers/ns-big.svg"
+              src="/stickers/ns-big.png"
               alt=""
               width={380}
               height={380}

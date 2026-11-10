@@ -23,12 +23,22 @@ export function ProjectCard({ project, detailed = false, index = 0 }: Props) {
       <article className={`card ${accentClass[accent]}`}>
         <span className="card-tag">{category}</span>
         {image ? (
-          <div className="mb-5 border-[2.5px] border-ink overflow-hidden">
+          <div className="mb-5 overflow-hidden border-[2.5px] border-ink bg-cream shadow-brutal">
+            <div aria-hidden="true" className="flex gap-1 border-b-2 border-ink px-2 py-1.5">
+              <span className="size-2 border border-ink bg-peach" />
+              <span className="size-2 border border-ink bg-sunshine" />
+              <span className="size-2 border border-ink bg-mint" />
+            </div>
             <Image
               src={image}
               alt={`Aperçu de ${name}`}
               width={640}
               height={400}
+              sizes={
+                detailed
+                  ? "(min-width: 1280px) 528px, (min-width: 900px) 44vw, calc(100vw - 124px)"
+                  : "(min-width: 1280px) 326px, (min-width: 901px) 28vw, calc(100vw - 124px)"
+              }
               className="block w-full h-auto"
             />
           </div>

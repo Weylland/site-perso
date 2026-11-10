@@ -7,7 +7,7 @@ export function ServicesNotListed() {
       <div className="max-w-7xl mx-auto px-8">
         <div className="bg-cream border-[2.5px] border-ink shadow-brutal max-w-[760px] mx-auto p-10 text-center">
           <Image
-            src="/stickers/plus.svg"
+            src="/stickers/plus.png"
             alt=""
             aria-hidden
             width={80}

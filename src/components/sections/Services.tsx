@@ -24,7 +24,7 @@ export function Services() {
             <Link href="/services#site-vitrine" className="card card-numbered card-sunshine">
               <span className="card-number">01</span>
               <Image
-                src="/stickers/globe.svg"
+                src="/stickers/globe.png"
                 alt=""
                 width={72}
                 height={72}

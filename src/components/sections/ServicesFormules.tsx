@@ -25,7 +25,7 @@ export function ServicesFormules() {
             <div className="card card-numbered card-sunshine">
               <span className="card-number">01</span>
               <Image
-                src="/stickers/globe.svg"
+                src="/stickers/globe.png"
                 alt=""
                 width={72}
                 height={72}
@@ -61,7 +61,7 @@ export function ServicesFormules() {
             <div className="card card-numbered card-peach">
               <span className="card-number">02</span>
               <Image
-                src="/stickers/cms.svg"
+                src="/stickers/cms.png"
                 alt=""
                 width={72}
                 height={72}
@@ -167,7 +167,7 @@ export function ServicesFormules() {
             <div className="card card-numbered card-peach">
               <span className="card-number">05</span>
               <Image
-                src="/stickers/chart.svg"
+                src="/stickers/chart.png"
                 alt=""
                 width={72}
                 height={72}

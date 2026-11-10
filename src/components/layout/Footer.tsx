@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Monogram } from "@/components/ui/Monogram";
 
 const linkClasses =
   "text-cream text-[0.95rem] opacity-80 hover:opacity-100 hover:underline underline-offset-4 transition-opacity duration-150";
@@ -19,12 +20,8 @@ export default function Footer() {
             href="/"
             className="inline-flex items-center gap-3 group hover:underline underline-offset-4"
           >
-            <span className="relative inline-flex items-center justify-center w-11 h-11 bg-peach border-[2.5px] border-ink shadow-brutal font-display font-bold text-[1.15rem] overflow-hidden transition-[transform_150ms_ease-out,box-shadow_150ms_ease-out,background-color_200ms_ease-out] group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-[-4deg] group-hover:shadow-none group-hover:bg-sunshine">
-              NS
-              <span
-                aria-hidden
-                className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.4)_0%,transparent_50%)]"
-              ></span>
+            <span className="brand-logo">
+              <Monogram width={30} />
             </span>
             <span className="font-display font-semibold text-[1.05rem] tracking-[-0.01em]">
               Nicolas Samier

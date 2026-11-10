@@ -55,7 +55,7 @@ export function AboutHero() {
 
         <div className="relative aspect-[310/270] min-[900px]:aspect-auto min-[900px]:min-h-[420px] animate-[fade-in_1s_ease-out_0.3s_backwards]">
           <Image
-            src="/stickers/ns-big.svg"
+            src="/stickers/ns-big.png"
             alt=""
             width={220}
             height={220}

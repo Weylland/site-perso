@@ -1,9 +1,13 @@
 import { ImageResponse } from "next/og";
+import { Monogram } from "@/components/ui/Monogram";
 import { siteConfig } from "@/lib/site-config";
 
 export const alt = siteConfig.title;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+const ink = "#0A0A0A";
+const cream = "#FEFAF3";
 
 export default function Image() {
   return new ImageResponse(
@@ -12,77 +16,108 @@ export default function Image() {
         width: "100%",
         height: "100%",
         display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        padding: "80px",
-        background: "#FEFAF3",
-        position: "relative",
+        alignItems: "center",
+        justifyContent: "space-between",
+        padding: "76px",
+        background: cream,
+        border: `6px solid ${ink}`,
+        color: ink,
       }}
     >
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          right: 0,
-          width: "220px",
-          height: "220px",
-          background: "#93C5FD",
-          borderLeft: "6px solid #0A0A0A",
-          borderBottom: "6px solid #0A0A0A",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          right: "220px",
-          width: "140px",
-          height: "140px",
-          background: "#FFD93D",
-          borderLeft: "6px solid #0A0A0A",
-          borderTop: "6px solid #0A0A0A",
-        }}
-      />
+      <div style={{ display: "flex", flexDirection: "column", width: 644 }}>
+        <div
+          style={{
+            display: "flex",
+            alignSelf: "flex-start",
+            background: ink,
+            color: cream,
+            padding: "10px 18px",
+            fontSize: 22,
+            fontWeight: 700,
+            letterSpacing: "0.08em",
+          }}
+        >
+          PORTFOLIO
+        </div>
+        <div
+          style={{
+            display: "flex",
+            fontSize: 104,
+            fontWeight: 700,
+            letterSpacing: "-0.055em",
+            lineHeight: 1,
+            margin: "22px 0 28px",
+          }}
+        >
+          {siteConfig.name}
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignSelf: "flex-start",
+            background: "#FFD93D",
+            border: `3px solid ${ink}`,
+            padding: "8px 16px",
+            fontSize: 30,
+            fontWeight: 700,
+          }}
+        >
+          Développeur fullstack · CDI &amp; freelance
+        </div>
+      </div>
+
       <div
         style={{
           display: "flex",
+          position: "relative",
           alignItems: "center",
           justifyContent: "center",
-          width: "88px",
-          height: "88px",
+          width: 300,
+          height: 300,
+          marginRight: 14,
           background: "#FFB892",
-          border: "5px solid #0A0A0A",
-          fontSize: "36px",
-          fontWeight: 700,
-          marginBottom: "48px",
+          border: `6px solid ${ink}`,
+          boxShadow: `14px 14px 0 ${ink}`,
+          transform: "rotate(5deg)",
         }}
       >
-        NS
-      </div>
-      <div
-        style={{
-          display: "flex",
-          fontSize: "64px",
-          fontWeight: 700,
-          color: "#0A0A0A",
-          letterSpacing: "-0.02em",
-          lineHeight: 1.1,
-        }}
-      >
-        {siteConfig.name}
-      </div>
-      <div
-        style={{
-          display: "flex",
-          marginTop: "24px",
-          fontSize: "32px",
-          color: "#0A0A0A",
-          opacity: 0.75,
-        }}
-      >
-        Développeur fullstack — CDI &amp; freelance
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: 240,
+            height: 240,
+            background: cream,
+            border: `4px solid ${ink}`,
+          }}
+        >
+          <Monogram width={192} />
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: 14,
+            right: 14,
+            width: 44,
+            height: 44,
+            background: "#FFD93D",
+            border: `4px solid ${ink}`,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            bottom: 14,
+            left: 14,
+            width: 44,
+            height: 44,
+            background: "#7FD9B8",
+            border: `4px solid ${ink}`,
+          }}
+        />
       </div>
     </div>,
-    { ...size },
+    size,
   );
 }
